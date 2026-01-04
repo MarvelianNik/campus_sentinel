@@ -233,7 +233,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-2">
-              <img src="/images/vidyasetu-20logo.png" alt="Vidyasetu Logo" className="h-12 w-auto" />
+              <img src="/images/campus-sentinel-logo.png" alt="Campus Sentinel Logo" className="h-12 w-auto" />
               <span className="text-xl font-semibold text-gray-900">Campus Sentinel</span>
             </Link>
             <Link href="/blog">
@@ -365,7 +365,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src="/images/vidyasetu-20logo.png" alt="Vidyasetu Logo" className="w-auto h-11" />
+                <img src="/images/campus-sentinel-logo.png" alt="Campus Sentinel Logo" className="w-auto h-11" />
                 <span className="text-lg font-semibold text-gray-900">Campus Sentinel</span>
               </div>
               <p className="text-sm text-gray-600 leading-relaxed">Modern school management for modern schools.</p>
