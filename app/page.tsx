@@ -24,6 +24,7 @@ import { useState } from "react"
 
 export default function HomePage() {
   const [showContactModal, setShowContactModal] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   return (
     <div className="min-h-screen bg-white">
@@ -107,11 +108,49 @@ export default function HomePage() {
                 Contact Sales
               </Button>
             </nav>
-            <button className="md:hidden">
-              <Menu className="h-6 w-6 text-gray-600" />
+            <button className="md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+              {isMobileMenuOpen ? <X className="h-6 w-6 text-gray-600" /> : <Menu className="h-6 w-6 text-gray-600" />}
             </button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-200 bg-white">
+            <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
+              <Link
+                href="#features"
+                className="text-sm font-medium text-gray-600 hover:text-gray-900"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Features
+              </Link>
+              <Link
+                href="#benefits"
+                className="text-sm font-medium text-gray-600 hover:text-gray-900"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Benefits
+              </Link>
+              <Link
+                href="#blogs"
+                className="text-sm font-medium text-gray-600 hover:text-gray-900"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Blogs
+              </Link>
+              <Button
+                onClick={() => {
+                  setShowContactModal(true)
+                  setIsMobileMenuOpen(false)
+                }}
+                className="custom-contact-btn w-full"
+              >
+                Contact Sales
+              </Button>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* Hero Section */}
@@ -652,7 +691,6 @@ export default function HomePage() {
             </div>
           </div>
           <div className="pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-            <p>&copy; 2025 Campus Sentinel. All rights reserved.</p>
             <p className="mt-2">Maximus consultancy services</p>
           </div>
         </div>
