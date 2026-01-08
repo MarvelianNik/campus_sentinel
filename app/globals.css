@@ -189,3 +189,31 @@
     /* Reduced rotation */
   }
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.5rem !important;
+    /* Adjust hero title on mobile */
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}

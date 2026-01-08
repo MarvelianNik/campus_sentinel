@@ -291,10 +291,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             />
 
             <div
-              className="prose prose-lg max-w-none"
+              className="prose md:prose-lg max-w-none"
               dangerouslySetInnerHTML={{ __html: post.content }}
               style={{
-                fontSize: "1.125rem",
+                fontSize: "var(--prose-font-size, 1.125rem)",
                 lineHeight: "1.75",
                 color: "#4b5563",
               }}
@@ -308,7 +308,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Related Articles</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {relatedPosts.map(([slug, post]) => (
                 <Link key={slug} href={`/blog/${slug}`}>
                   <Card className="overflow-hidden bg-white border-gray-200 hover:shadow-xl transition-all h-full group">
@@ -427,7 +427,6 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             </div>
           </div>
           <div className="pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-            <p>&copy; 2025 Campus Sentinel. All rights reserved.</p>
             <p className="mt-2">Maximus consultancy services</p>
           </div>
         </div>

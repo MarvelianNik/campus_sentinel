@@ -11,10 +11,67 @@ const _merriweatherSans = V0_Font_Merriweather_Sans({ subsets: ['latin'], weight
 const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
 
 export const metadata: Metadata = {
-  title: "Campus Sentinel - A smarter way to manage your school",
+  metadataBase: new URL("https://campus-sentinel.com"), // TODO: Update with actual domain
+  title: {
+    default: "Campus Sentinel - Smart School Management Platform",
+    template: "%s | Campus Sentinel",
+  },
   description:
     "Complete school management platform for principals. Track attendance, manage fees, communicate with parents, and get smart insights—all in one simple platform.",
-  generator: "v0.app",
+  keywords: [
+    "School Management System",
+    "School ERP",
+    "Attendance Tracking",
+    "Fee Management",
+    "Parent Communication",
+    "School Analytics",
+    "Education Technology",
+    "Principal Dashboard",
+  ],
+  authors: [{ name: "Campus Sentinel Team" }],
+  creator: "Campus Sentinel",
+  publisher: "Campus Sentinel",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://campus-sentinel.com",
+    title: "Campus Sentinel - A smarter way to manage your school",
+    description:
+      "Complete school management platform for principals. Track attendance, manage fees, communicate with parents, and get smart insights.",
+    siteName: "Campus Sentinel",
+    images: [
+      {
+        url: "/og-image.jpg", // Needs to be added to public folder ideally
+        width: 1200,
+        height: 630,
+        alt: "Campus Sentinel Dashboard Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Campus Sentinel - A smarter way to manage your school",
+    description:
+      "Complete school management platform for principals. Track attendance, manage fees, communicate with parents, and get smart insights.",
+    images: ["/og-image.jpg"],
+    creator: "@campussentinel",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: "/images/favicon.ico",
     apple: "/apple-icon.png",

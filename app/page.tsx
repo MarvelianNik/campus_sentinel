@@ -213,23 +213,23 @@ export default function HomePage() {
               juggling multiple systems.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-6 glass-card">
-              <Clock className="h-10 w-10 text-gray-400 mb-4" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="p-6 glass-card hover:shadow-lg transition-all duration-300">
+              <Clock className="h-10 w-10 text-[#2563EB] mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Time-consuming tasks</h3>
               <p className="text-gray-600 leading-relaxed">
                 Hours wasted on manual attendance, fee tracking, and generating reports.
               </p>
             </Card>
-            <Card className="p-6 glass-card">
-              <MessageSquare className="h-10 w-10 text-gray-400 mb-4" />
+            <Card className="p-6 glass-card hover:shadow-lg transition-all duration-300">
+              <MessageSquare className="h-10 w-10 text-[#2563EB] mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Poor communication</h3>
               <p className="text-gray-600 leading-relaxed">
                 Parents constantly calling for updates while important notices get missed.
               </p>
             </Card>
-            <Card className="p-6 glass-card">
-              <BarChart3 className="h-10 w-10 text-gray-400 mb-4" />
+            <Card className="p-6 glass-card hover:shadow-lg transition-all duration-300">
+              <BarChart3 className="h-10 w-10 text-[#2563EB] mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">No clear insights</h3>
               <p className="text-gray-600 leading-relaxed">
                 Making decisions without real-time data on your school's performance.
@@ -250,43 +250,43 @@ export default function HomePage() {
               See what matters most with clean, simple dashboards designed for principals— not software engineers.
             </p>
           </div>
-          <div className="grid lg:grid-cols-3 gap-8">
-            <Card className="p-6 glass-card">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <Card className="p-6 glass-card hover:translate-y-[-5px] transition-transform duration-300">
               <div className="mb-4">
                 <Badge className="bg-blue-50 text-[#25634A] border-0">Principal Overview</Badge>
               </div>
               <img
                 src="/school-dashboard-with-attendance-and-fee-collectio.jpg"
                 alt="Principal Overview Dashboard"
-                className="w-full rounded-lg mb-4"
+                className="w-full rounded-lg mb-4 shadow-sm"
               />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Complete overview</h3>
               <p className="text-sm text-gray-600">
                 Key metrics like attendance rate, fee collection status, and student count—all in one view.
               </p>
             </Card>
-            <Card className="p-6 glass-card">
+            <Card className="p-6 glass-card hover:translate-y-[-5px] transition-transform duration-300">
               <div className="mb-4">
                 <Badge className="bg-green-50 text-[#16A34A] border-0">Fees Management</Badge>
               </div>
               <img
                 src="/fee-collection-dashboard-with-payment-status.jpg"
                 alt="Fees Dashboard"
-                className="w-full rounded-lg mb-4"
+                className="w-full rounded-lg mb-4 shadow-sm"
               />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Fee collection made easy</h3>
               <p className="text-sm text-gray-600">
                 Track payments, send reminders, and generate receipts instantly without manual work.
               </p>
             </Card>
-            <Card className="p-6 glass-card">
+            <Card className="p-6 glass-card hover:translate-y-[-5px] transition-transform duration-300">
               <div className="mb-4">
                 <Badge className="bg-blue-50 text-[#25634A] border-0">Attendance</Badge>
               </div>
               <img
                 src="/attendance-tracking-dashboard-with-student-metrics.jpg"
                 alt="Attendance Dashboard"
-                className="w-full rounded-lg mb-4"
+                className="w-full rounded-lg mb-4 shadow-sm"
               />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Attendance tracking</h3>
               <p className="text-sm text-gray-600">
@@ -308,8 +308,8 @@ export default function HomePage() {
               Powerful features that actually make your life easier—not more complicated.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="flex gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center">
                   <Bell className="h-6 w-6 text-[#25634A]" />
@@ -322,7 +322,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center">
                   <FileText className="h-6 w-6 text-[#25634A]" />
@@ -335,7 +335,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center">
                   <Users className="h-6 w-6 text-[#25634A]" />
@@ -348,7 +348,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-green-50 flex items-center justify-center">
                   <TrendingUp className="h-6 w-6 text-[#16A34A]" />
@@ -361,7 +361,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center">
                   <Shield className="h-6 w-6 text-[#25634A]" />
@@ -374,7 +374,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center">
                   <BarChart3 className="h-6 w-6 text-[#25634A]" />
@@ -404,8 +404,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <Card className="p-8 glass-card">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <Card className="p-8 glass-card hover:border-[#16A34A] transition-colors duration-300">
               <div className="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6">
                 <Clock className="h-7 w-7 text-[#25634A]" />
               </div>
@@ -420,7 +420,7 @@ export default function HomePage() {
               </div>
             </Card>
 
-            <Card className="p-8 glass-card">
+            <Card className="p-8 glass-card hover:border-[#16A34A] transition-colors duration-300">
               <div className="w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center mb-6">
                 <TrendingUp className="h-7 w-7 text-[#16A34A]" />
               </div>
@@ -435,7 +435,7 @@ export default function HomePage() {
               </div>
             </Card>
 
-            <Card className="p-8 glass-card">
+            <Card className="p-8 glass-card hover:border-[#16A34A] transition-colors duration-300">
               <div className="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6">
                 <MessageSquare className="h-7 w-7 text-[#25634A]" />
               </div>
@@ -450,7 +450,7 @@ export default function HomePage() {
               </div>
             </Card>
 
-            <Card className="p-8 glass-card">
+            <Card className="p-8 glass-card hover:border-[#16A34A] transition-colors duration-300">
               <div className="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6">
                 <BarChart3 className="h-7 w-7 text-[#25634A]" />
               </div>
@@ -467,8 +467,8 @@ export default function HomePage() {
           </div>
 
           {/* Additional Benefits Grid */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-xl border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
                   <Shield className="h-5 w-5 text-[#25634A]" />
@@ -480,7 +480,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl border border-gray-200">
+            <div className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center">
                   <Users className="h-5 w-5 text-[#16A34A]" />
@@ -492,7 +492,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl border border-gray-200">
+            <div className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
                   <FileText className="h-5 w-5 text-[#25634A]" />
@@ -519,12 +519,12 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="overflow-hidden glass-card">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="overflow-hidden glass-card hover:shadow-xl transition-all duration-300">
               <img
                 src="/school-teacher-using-digital-attendance-system-tab.jpg"
                 alt="Digital attendance tracking"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
               />
               <div className="p-6">
                 <Badge className="mb-3 bg-blue-50 text-[#2563EB] border-0">Best Practices</Badge>
@@ -534,18 +534,18 @@ export default function HomePage() {
                 </p>
                 <Link
                   href="/blog/5-ways-to-improve-attendance-tracking"
-                  className="text-[#2563EB] font-medium hover:underline"
+                  className="text-[#2563EB] font-medium hover:underline inline-flex items-center gap-1"
                 >
-                  Read more →
+                  Read more <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>
             </Card>
 
-            <Card className="overflow-hidden glass-card">
+            <Card className="overflow-hidden glass-card hover:shadow-xl transition-all duration-300">
               <img
                 src="/parent-teacher-communication-mobile-app-notificati.jpg"
                 alt="Parent communication"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
               />
               <div className="p-6">
                 <Badge className="mb-3 bg-green-50 text-[#16A34A] border-0">Parent Engagement</Badge>
@@ -555,18 +555,18 @@ export default function HomePage() {
                 </p>
                 <Link
                   href="/blog/boosting-parent-communication-2025"
-                  className="text-[#2563EB] font-medium hover:underline"
+                  className="text-[#2563EB] font-medium hover:underline inline-flex items-center gap-1"
                 >
-                  Read more →
+                  Read more <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>
             </Card>
 
-            <Card className="overflow-hidden glass-card">
+            <Card className="overflow-hidden glass-card hover:shadow-xl transition-all duration-300">
               <img
                 src="/school-administrator-reviewing-fee-collection-dash.jpg"
                 alt="Fee collection strategies"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
               />
               <div className="p-6">
                 <Badge className="mb-3 bg-blue-50 text-[#2563EB] border-0">Finance</Badge>
@@ -576,9 +576,9 @@ export default function HomePage() {
                 </p>
                 <Link
                   href="/blog/maximizing-fee-collection-efficiency"
-                  className="text-[#2563EB] font-medium hover:underline"
+                  className="text-[#2563EB] font-medium hover:underline inline-flex items-center gap-1"
                 >
-                  Read more →
+                  Read more <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>
             </Card>

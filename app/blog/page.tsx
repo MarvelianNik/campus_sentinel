@@ -112,7 +112,7 @@ export default function BlogPage() {
       {/* Blog Grid */}
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`}>
                 <Card className="overflow-hidden bg-white border-gray-200 hover:shadow-xl transition-all h-full group">
@@ -235,7 +235,6 @@ export default function BlogPage() {
             </div>
           </div>
           <div className="pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-            <p>&copy; 2025 Campus Sentinel. All rights reserved.</p>
             <p className="mt-2">Maximus consultancy services</p>
           </div>
         </div>
