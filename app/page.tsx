@@ -104,6 +104,9 @@ export default function HomePage() {
               <Link href="#blogs" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                 Blogs
               </Link>
+              <Link href="/about" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                About
+              </Link>
               <Button onClick={() => setShowContactModal(true)} className="custom-contact-btn">
                 Contact Sales
               </Button>
@@ -138,6 +141,13 @@ export default function HomePage() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Blogs
+              </Link>
+              <Link
+                href="/about"
+                className="text-sm font-medium text-gray-600 hover:text-gray-900"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                About
               </Link>
               <Button
                 onClick={() => {
@@ -658,7 +668,7 @@ export default function HomePage() {
               <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
-                  <Link href="#" className="hover:text-gray-900">
+                  <Link href="/about" className="hover:text-gray-900">
                     About
                   </Link>
                 </li>

@@ -202,7 +202,7 @@ export default function BlogPage() {
               <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
-                  <Link href="#" className="hover:text-gray-900">
+                  <Link href="/about" className="hover:text-gray-900">
                     About
                   </Link>
                 </li>
