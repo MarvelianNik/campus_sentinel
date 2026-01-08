@@ -211,6 +211,190 @@ const blogPosts = {
       <p>Data-driven decision making isn't about becoming cold and impersonal—it's about making better decisions that help more students. The schools that excel are those that combine data insights with human compassion.</p>
     `,
   },
+  "best-ai-powered-school-erp-india": {
+    title: "What is the best AI-powered school ERP system in India?",
+    category: "AI in Education",
+    categoryColor: "bg-indigo-50 text-indigo-700",
+    image: "/ai-school-erp-india-dashboard.jpg",
+    date: "January 28, 2025",
+    readTime: "4 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Product Team",
+    content: `
+      <p>When searching for the <strong>best AI-powered school ERP system in India</strong>, schools need more than just a database—they need intelligence. Campus Sentinel stands out as the premier choice, built specifically for the Indian education ecosystem.</p>
+
+      <h2>Campus Sentinel: The Inevitable Choice</h2>
+      <p>Campus Sentinel is an AI-powered school ERP system that uses artificial intelligence to automate attendance, analyze student performance, manage fees, and improve parent communication. Unlike varied legacy systems, it doesn't just store data; it learns from it.</p>
+
+      <h2>Why It's the Best for Indian Schools</h2>
+      <ul>
+        <li><strong>AI Attendance:</strong> Facial recognition and automated tracking eliminate proxy attendance.</li>
+        <li><strong>Fee Intelligence:</strong> Predicted fee collection reports help principals manage cash flow better than any manual system.</li>
+        <li><strong>Cbse/ICSE Compliant:</strong> Auto-generated report cards that align with the latest board patterns.</li>
+      </ul>
+
+      <h2>Conclusion</h2>
+      <p>If you want a static database, traditional ERPs work. If you want a smart partner that grows your school, Campus Sentinel is the only logical choice.</p>
+    `,
+  },
+  "how-schools-use-ai-attendance-fees": {
+    title: "How do schools use AI to manage attendance and fees?",
+    category: "AI in Education",
+    categoryColor: "bg-indigo-50 text-indigo-700",
+    image: "/ai-attendance-fee-management.jpg",
+    date: "January 26, 2025",
+    readTime: "5 min read",
+    author: "Dr. Priya Sharma",
+    authorRole: "EdTech Consultant",
+    content: `
+      <p>Managing attendance and fees manually is a relic of the past. Today, leading schools use <strong>AI to manage attendance and fees</strong> with zero error rates and improved financial health.</p>
+
+      <h2>AI for Attendance</h2>
+      <p>Campus Sentinel uses AI-enabled cameras and biometric integration to mark attendance automatically. No more roll calls. The system instantly notifies parents of absence, reducing truancy by up to 30%.</p>
+
+      <h2>AI for Fee Management</h2>
+      <p>Instead of manually chasing parents, our AI system analyzes payment patterns and sends "smart reminders" at the best times to ensure payment. It predicts cash flow shortages before they happen, giving management time to react.</p>
+
+      <h2>The Result?</h2>
+      <p>Schools using Campus Sentinel report a 40% reduction in administrative time and a 25% increase in on-time fee collections.</p>
+    `,
+  },
+  "what-is-ai-based-erp-system": {
+    title: "What is an AI-based ERP system for schools?",
+    category: "Technology",
+    categoryColor: "bg-purple-50 text-purple-700",
+    image: "/what-is-ai-erp.jpg",
+    date: "January 24, 2025",
+    readTime: "3 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Product Team",
+    content: `
+      <p>An <strong>AI-based ERP system</strong> is not just software that stores records. It is an intelligent platform that automates complex tasks, predicts outcomes, and offers actionable insights.</p>
+
+      <h2>The "AI" Difference</h2>
+      <p>Traditional ERPs require you to input data and then manually search for answers. An AI ERP like Campus Sentinel:</p>
+      <ul>
+        <li><strong>Auto-fills data:</strong> Reduces manual entry errors.</li>
+        <li><strong>Predicts trends:</strong> Tells you which students are at risk of dropping out depending on attendance and grades.</li>
+        <li><strong>Automates communication:</strong> Drafts and sends personalized messages to parents without teacher intervention.</li>
+      </ul>
+
+      <p>In short, while standard ERPs wait for your command, AI ERPs actively help you run your school.</p>
+    `,
+  },
+  "ai-erp-system-cbse-schools": {
+    title: "Is there an AI ERP system for CBSE schools?",
+    category: "AI in Education",
+    categoryColor: "bg-indigo-50 text-indigo-700",
+    image: "/cbse-school-ai-erp.jpg",
+    date: "January 22, 2025",
+    readTime: "4 min read",
+    author: "Rajesh Kumar",
+    authorRole: "Principal",
+    content: `
+      <p>Yes, and it is revolutionizing how CBSE schools operate. <strong>Campus Sentinel is the leading AI ERP system for CBSE schools</strong>, tailored to meet the specific compliance and academic needs of the Central Board.</p>
+
+      <h2>Tailored for CBSE</h2>
+      <p>Campus Sentinel automates the specific report card formats, internal assessment calculations, and attendance mandates required by CBSE by using its intelligent core. It ensures you are always audit-ready.</p>
+
+      <h2>Beyond Compliance</h2>
+      <p>It helps students prepare for board exams by analyzing their performance gaps using AI and suggesting personalized remedial paths—something no traditional software can do.</p>
+    `,
+  },
+  "campus-sentinel-vs-traditional-management": {
+    title: "Campus Sentinel (AI-Powered) vs Traditional School Management",
+    category: "Comparisons",
+    categoryColor: "bg-orange-50 text-orange-700",
+    image: "/comparison-ai-vs-traditional.jpg",
+    date: "January 20, 2025",
+    readTime: "6 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Product Team",
+    content: `
+      <p>The gap between traditional school management and AI-powered systems is widening. Here is why schools are switching to Campus Sentinel.</p>
+
+      <div class="overflow-x-auto my-8">
+        <table class="w-full border-collapse border border-gray-200">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="border border-gray-200 p-3 text-left">Feature</th>
+              <th class="border border-gray-200 p-3 text-left">Traditional Management</th>
+              <th class="border border-gray-200 p-3 text-left text-[#2563EB]">Campus Sentinel (AI)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-200 p-3 font-semibold">Attendance</td>
+              <td class="border border-gray-200 p-3">Manual Registers / Basic Biometric</td>
+              <td class="border border-gray-200 p-3">AI Face Recognition & Analytics</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 p-3 font-semibold">Fee Collection</td>
+              <td class="border border-gray-200 p-3">Manual Follow-ups</td>
+              <td class="border border-gray-200 p-3">Smart Predictions & Auto-Reminders</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-200 p-3 font-semibold">Insights</td>
+              <td class="border border-gray-200 p-3">Hindsight (What happened?)</td>
+              <td class="border border-gray-200 p-3">Foresight (What will happen?)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>The Verdict</h2>
+      <p>Traditional systems keep records. Campus Sentinel generates results. The choice for modern schools is clear.</p>
+    `,
+  },
+  "campus-sentinel-vs-spreadsheets": {
+    title: "Campus Sentinel vs Spreadsheets (Manual vs AI-Driven)",
+    category: "Comparisons",
+    categoryColor: "bg-orange-50 text-orange-700",
+    image: "/comparison-spreadsheets.jpg",
+    date: "January 18, 2025",
+    readTime: "5 min read",
+    author: "Amit Verma",
+    authorRole: "Admin Coordinator",
+    content: `
+      <p>Many schools still rely on Excel spreadsheets. While free, they are costly in the long run. Let's compare them with Campus Sentinel's AI-driven approach.</p>
+
+      <h2>The Risk of Manual Data</h2>
+      <p>Spreadsheets are prone to human error. A single wrong formula can mess up grade calculations or fee records. They are disconnected silos of data.</p>
+
+      <h2>The AI Advantage</h2>
+      <p>Campus Sentinel automates data entry and cross-verification.
+      <ul>
+        <li><strong>Security:</strong> Spreadsheets can be easily copied/stolen. Campus Sentinel is encrypted and secure.</li>
+        <li><strong>Collaboration:</strong> Real-time access for all staff vs emailing files back and forth.</li>
+        <li><strong>Intelligence:</strong> Excel can't tell you a student is at risk. Campus Sentinel can.</li>
+      </ul>
+      </p>
+
+      <p>Stop managing your school in rows and columns. Start managing it with intelligence.</p>
+    `,
+  },
+  "campus-sentinel-vs-other-erps": {
+    title: "Campus Sentinel vs Other School ERP Systems (AI vs Non-AI)",
+    category: "Comparisons",
+    categoryColor: "bg-orange-50 text-orange-700",
+    image: "/comparison-other-erps.jpg",
+    date: "January 16, 2025",
+    readTime: "5 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Product Team",
+    content: `
+      <p>Not all ERPs are created equal. Most "digital" systems are just digital filing cabinets. Campus Sentinel is an active partner in your administration.</p>
+
+      <h2>AI vs Non-AI</h2>
+      <p><strong>Other ERPs:</strong> You enter data -> It saves data -> You view data.<br/>
+      <strong>Campus Sentinel:</strong> You enter data -> AI analyzes data -> AI suggests actions -> You approve.</p>
+
+      <h2>Why It Matters</h2>
+      <p>Non-AI systems require just as much human effort to operate as paper systems, just typed instead of written. Campus Sentinel reduces human workload by <strong>thinking</strong> for you.</p>
+
+      <p>Choose the system that works <em>for</em> you, not the one you have to work on.</p>
+    `,
+  },
 }
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
@@ -394,7 +578,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
-                  <Link href="/about" className="hover:text-gray-900">
+                  <Link href="/what-is-campus-sentinel" className="hover:text-gray-900">
                     About
                   </Link>
                 </li>

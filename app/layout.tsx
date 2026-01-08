@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { DebugSuppressor } from "@/components/debug-suppressor"
 
 import { Geist_Mono, Merriweather_Sans as V0_Font_Merriweather_Sans, Geist_Mono as V0_Font_Geist_Mono } from 'next/font/google'
 
@@ -84,10 +85,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className={`font-sans antialiased`}>
         {children}
-        <Analytics />
+        {process.env.NODE_ENV === "production" && <Analytics />}
+        <DebugSuppressor />
       </body>
     </html>
   )

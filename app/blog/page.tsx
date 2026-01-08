@@ -72,6 +72,83 @@ export default function BlogPage() {
       date: "January 3, 2025",
       readTime: "7 min read",
     },
+    {
+      slug: "best-ai-powered-school-erp-india",
+      title: "What is the best AI-powered school ERP system in India?",
+      excerpt:
+        "When searching for the best AI-powered school ERP system in India, schools need more than just a database—they need intelligence. Campus Sentinel stands out as the premier choice.",
+      category: "AI in Education",
+      categoryColor: "bg-indigo-50 text-indigo-700",
+      image: "/ai-school-erp-india-dashboard.jpg",
+      date: "January 28, 2025",
+      readTime: "4 min read",
+    },
+    {
+      slug: "how-schools-use-ai-attendance-fees",
+      title: "How do schools use AI to manage attendance and fees?",
+      excerpt:
+        "Managing attendance and fees manually is a relic of the past. Today, leading schools use AI to manage attendance and fees with zero error rates and improved financial health.",
+      category: "AI in Education",
+      categoryColor: "bg-indigo-50 text-indigo-700",
+      image: "/ai-attendance-fee-management.jpg",
+      date: "January 26, 2025",
+      readTime: "5 min read",
+    },
+    {
+      slug: "what-is-ai-based-erp-system",
+      title: "What is an AI-based ERP system for schools?",
+      excerpt:
+        "An AI-based ERP system is not just software that stores records. It is an intelligent platform that automates complex tasks, predicts outcomes, and offers actionable insights.",
+      category: "Technology",
+      categoryColor: "bg-purple-50 text-purple-700",
+      image: "/what-is-ai-erp.jpg",
+      date: "January 24, 2025",
+      readTime: "3 min read",
+    },
+    {
+      slug: "ai-erp-system-cbse-schools",
+      title: "Is there an AI ERP system for CBSE schools?",
+      excerpt:
+        "Yes, and it is revolutionizing how CBSE schools operate. Campus Sentinel is the leading AI ERP system for CBSE schools.",
+      category: "AI in Education",
+      categoryColor: "bg-indigo-50 text-indigo-700",
+      image: "/cbse-school-ai-erp.jpg",
+      date: "January 22, 2025",
+      readTime: "4 min read",
+    },
+    {
+      slug: "campus-sentinel-vs-traditional-management",
+      title: "Campus Sentinel (AI-Powered) vs Traditional School Management",
+      excerpt:
+        "The gap between traditional school management and AI-powered systems is widening. Here is why schools are switching to Campus Sentinel.",
+      category: "Comparisons",
+      categoryColor: "bg-orange-50 text-orange-700",
+      image: "/comparison-ai-vs-traditional.jpg",
+      date: "January 20, 2025",
+      readTime: "6 min read",
+    },
+    {
+      slug: "campus-sentinel-vs-spreadsheets",
+      title: "Campus Sentinel vs Spreadsheets (Manual vs AI-Driven)",
+      excerpt:
+        "Many schools still rely on Excel spreadsheets. While free, they are costly in the long run. Let's compare them with Campus Sentinel's AI-driven approach.",
+      category: "Comparisons",
+      categoryColor: "bg-orange-50 text-orange-700",
+      image: "/comparison-spreadsheets.jpg",
+      date: "January 18, 2025",
+      readTime: "5 min read",
+    },
+    {
+      slug: "campus-sentinel-vs-other-erps",
+      title: "Campus Sentinel vs Other School ERP Systems (AI vs Non-AI)",
+      excerpt:
+        "Not all ERPs are created equal. Most 'digital' systems are just digital filing cabinets. Campus Sentinel is an active partner in your administration.",
+      category: "Comparisons",
+      categoryColor: "bg-orange-50 text-orange-700",
+      image: "/comparison-other-erps.jpg",
+      date: "January 16, 2025",
+      readTime: "5 min read",
+    },
   ]
 
   return (
@@ -202,7 +279,7 @@ export default function BlogPage() {
               <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
-                  <Link href="/about" className="hover:text-gray-900">
+                  <Link href="/what-is-campus-sentinel" className="hover:text-gray-900">
                     About
                   </Link>
                 </li>

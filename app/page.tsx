@@ -170,11 +170,10 @@ export default function HomePage() {
             <div className="lg:mt-8">
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 text-balance">
-                A smarter way to manage your school.
+                Campus Sentinel – AI Powered School ERP System for Indian Schools
               </h1>
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 text-pretty">
-                Complete control over your school operations. From attendance to fees, parent communication to smart
-                reports—everything in one simple platform.
+                An all-in-one AI-powered ERP software that automates attendance, fees, exams, parent communication, and delivers real-time analytics for schools.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -668,7 +667,7 @@ export default function HomePage() {
               <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
-                  <Link href="/about" className="hover:text-gray-900">
+                  <Link href="/what-is-campus-sentinel" className="hover:text-gray-900">
                     About
                   </Link>
                 </li>
