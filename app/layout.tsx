@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { DebugSuppressor } from "@/components/debug-suppressor"
+import Script from 'next/script'
 
 import { Geist_Mono, Merriweather_Sans as V0_Font_Merriweather_Sans, Geist_Mono as V0_Font_Geist_Mono } from 'next/font/google'
 
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "Campus Sentinel",
     images: [
       {
-        url: "/og-image.jpg", // Needs to be added to public folder ideally
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Campus Sentinel Dashboard Preview",
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
     title: "Campus Sentinel - A smarter way to manage your school",
     description:
       "Complete school management platform for principals. Track attendance, manage fees, communicate with parents, and get smart insights.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
     creator: "@campussentinel",
   },
   robots: {
@@ -88,6 +89,29 @@ export default function RootLayout({
     <html lang="en" data-scroll-behavior="smooth">
       <body className={`font-sans antialiased`}>
         {children}
+        <Script
+          id="org-json-ld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Campus Sentinel',
+              url: 'https://campus-sentinel.com',
+              logo: 'https://campus-sentinel.com/images/campus-sentinel-logo.png',
+              sameAs: [
+                'https://twitter.com/campussentinel'
+              ],
+              contactPoint: {
+                '@type': 'ContactPoint',
+                telephone: '+91-761-910-7621',
+                contactType: 'sales',
+                areaServed: 'IN',
+                availableLanguage: 'en'
+              }
+            })
+          }}
+        />
         {process.env.NODE_ENV === "production" && <Analytics />}
         <DebugSuppressor />
       </body>
