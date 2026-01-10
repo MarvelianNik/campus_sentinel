@@ -15,20 +15,21 @@ const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200
 export const metadata: Metadata = {
   metadataBase: new URL("https://campus-sentinel.com"), // TODO: Update with actual domain
   title: {
-    default: "Campus Sentinel - Smart School Management Platform",
+    default: "Campus Sentinel | World's First AI-Powered School ERP",
     template: "%s | Campus Sentinel",
   },
   description:
-    "Complete school management platform for principals. Track attendance, manage fees, communicate with parents, and get smart insights—all in one simple platform.",
+    "Campus Sentinel is the first AI-driven School ERP system that automates attendance via surveillance, answer sheet evaluation, and parent communication for modern schools.",
   keywords: [
+    "AI School ERP",
+    "AI Powered School Management",
+    "Automated Attendance Surveillance",
+    "AI Answer Sheet Evaluation",
+    "Smart School ERP India",
+    "Campus Safety AI",
+    "AI Student Performance Analysis",
     "School Management System",
-    "School ERP",
-    "Attendance Tracking",
-    "Fee Management",
-    "Parent Communication",
-    "School Analytics",
-    "Education Technology",
-    "Principal Dashboard",
+    "Parent Communication AI",
   ],
   authors: [{ name: "Campus Sentinel Team" }],
   creator: "Campus Sentinel",
