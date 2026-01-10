@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from "react"
+import { ContactModal } from "@/components/contact-modal"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -5,6 +9,8 @@ import { Calendar, Clock, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
 export default function BlogPage() {
+  const [showContactModal, setShowContactModal] = useState(false)
+
   const blogPosts = [
     {
       slug: "5-ways-to-improve-attendance-tracking",
@@ -153,6 +159,7 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
       {/* Header */}
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -233,7 +240,7 @@ export default function BlogPage() {
               See how Campus Sentinel can help you save time and improve parent engagement.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-[#2563EB] hover:bg-[#1d4ed8] text-white">
+              <Button onClick={() => setShowContactModal(true)} size="lg" className="bg-[#2563EB] hover:bg-[#1d4ed8] text-white">
                 Contact Sales
               </Button>
               <Button size="lg" variant="outline" className="border-gray-300 bg-transparent">
@@ -284,9 +291,9 @@ export default function BlogPage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-gray-900">
+                  <button onClick={() => setShowContactModal(true)} className="hover:text-gray-900 text-left">
                     Contact
-                  </Link>
+                  </button>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-gray-900">

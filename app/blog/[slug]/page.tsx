@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, ArrowLeft, Share2 } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import { SiteFooter } from "@/components/site-footer"
+import { ContactSalesButton } from "@/components/contact-sales-button"
 
 const blogPosts = {
   "5-ways-to-improve-attendance-tracking": {
@@ -532,9 +534,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               See how Campus Sentinel can help you save time and improve parent engagement.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-[#2563EB] hover:bg-gray-100">
+              <ContactSalesButton size="lg" className="bg-white text-[#2563EB] hover:bg-gray-100">
                 Contact Sales
-              </Button>
+              </ContactSalesButton>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
                 Watch Demo
               </Button>
@@ -544,77 +546,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-50 border-t border-gray-200">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <img src="/images/campus-sentinel-logo.png" alt="Campus Sentinel Logo" className="w-auto h-11" />
-                <span className="text-lg font-semibold text-gray-900">Campus Sentinel</span>
-              </div>
-              <p className="text-sm text-gray-600 leading-relaxed">Modern school management for modern schools.</p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-4">Product</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>
-                  <Link href="/#features" className="hover:text-gray-900">
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#benefits" className="hover:text-gray-900">
-                    Benefits
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" className="hover:text-gray-900">
-                    Demo
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>
-                  <Link href="/what-is-campus-sentinel" className="hover:text-gray-900">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900">
-                    Support
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-4">Legal</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>
-                  <Link href="#" className="hover:text-gray-900">
-                    Privacy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900">
-                    Terms
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-            <p className="mt-2">Maximus consultancy services</p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

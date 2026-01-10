@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from "react"
+import { ContactModal } from "@/components/contact-modal"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -21,8 +25,11 @@ import Link from "next/link"
 import React from "react"
 
 export default function AboutPage() {
+    const [showContactModal, setShowContactModal] = useState(false)
+
     return (
         <div className="min-h-screen bg-white">
+            <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
             {/* Header */}
             <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +51,7 @@ export default function AboutPage() {
                             <Link href="/about" className="text-sm font-medium text-gray-900">
                                 About
                             </Link>
-                            <Button className="custom-contact-btn">
+                            <Button onClick={() => setShowContactModal(true)} className="custom-contact-btn">
                                 Contact Sales
                             </Button>
                         </nav>
@@ -287,9 +294,9 @@ export default function AboutPage() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:text-gray-900">
+                                    <button onClick={() => setShowContactModal(true)} className="hover:text-gray-900 text-left">
                                         Contact
-                                    </Link>
+                                    </button>
                                 </li>
                                 <li>
                                     <Link href="#" className="hover:text-gray-900">

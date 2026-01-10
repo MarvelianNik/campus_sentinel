@@ -21,6 +21,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
+import { ContactModal } from "@/components/contact-modal"
 
 export default function HomePage() {
   const [showContactModal, setShowContactModal] = useState(false)
@@ -28,63 +29,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {showContactModal && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative animate-in fade-in zoom-in duration-200">
-            <button
-              onClick={() => setShowContactModal(false)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
-            >
-              <X className="h-6 w-6" />
-            </button>
-
-            <div className="text-center mb-6">
-              <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-4">
-                <Phone className="h-8 w-8 text-[#2563EB]" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Contact Sales</h3>
-              <p className="text-gray-600">Get in touch with our team to schedule a demo</p>
-            </div>
-
-            <div className="space-y-4">
-              <a
-                href="tel:+917619107621"
-                className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 hover:border-[#2563EB] hover:bg-blue-50 transition-all group"
-              >
-                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center group-hover:bg-[#2563EB] transition-colors">
-                  <Phone className="h-6 w-6 text-[#2563EB] group-hover:text-white" />
-                </div>
-                <div className="flex-1">
-                  <div className="text-sm text-gray-600">Phone Number</div>
-                  <div className="font-semibold text-gray-900">+91 761 910 7621</div>
-                </div>
-              </a>
-
-              <div className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 bg-gray-50">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center bg-background">
-                  <Mail className="h-6 w-6 text-primary" />
-                </div>
-                <div className="flex-1">
-                  <div className="text-sm text-gray-600">Email</div>
-                  <div className="font-semibold text-gray-900">maximusconsultancyservice@gmail.com</div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 bg-gray-50">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-primary" />
-                </div>
-                <div className="flex-1">
-                  <div className="text-sm text-gray-600">Location</div>
-                  <div className="font-semibold text-gray-900">Available across India</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-6 text-center text-sm text-gray-600">Our team typically responds within 24 hours</div>
-          </div>
-        </div>
-      )}
+      <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
 
       {/* Header */}
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
@@ -672,9 +617,9 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-gray-900">
+                  <button onClick={() => setShowContactModal(true)} className="hover:text-gray-900 text-left">
                     Contact
-                  </Link>
+                  </button>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-gray-900">
