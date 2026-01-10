@@ -13,7 +13,7 @@ const _merriweatherSans = V0_Font_Merriweather_Sans({ subsets: ['latin'], weight
 const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://campus-sentinel.com"), // TODO: Update with actual domain
+  metadataBase: new URL("https://campussentinel.com"), // TODO: Update with actual domain
   title: {
     default: "Campus Sentinel | World's First AI-Powered School ERP",
     template: "%s | Campus Sentinel",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://campus-sentinel.com",
+    url: "https://campussentinel.com",
     title: "Campus Sentinel - A smarter way to manage your school",
     description:
       "Complete school management platform for principals. Track attendance, manage fees, communicate with parents, and get smart insights.",
@@ -98,8 +98,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'Campus Sentinel',
-              url: 'https://campus-sentinel.com',
-              logo: 'https://campus-sentinel.com/images/campus-sentinel-logo.png',
+              url: 'https://campussentinel.com',
+              logo: 'https://campussentinel.com/images/campus-sentinel-logo.png',
               sameAs: [
                 'https://twitter.com/campussentinel'
               ],

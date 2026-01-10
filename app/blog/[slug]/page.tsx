@@ -58,7 +58,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
-    image: post.image ? [`https://campus-sentinel.com${post.image}`] : [],
+    image: post.image ? [`https://campussentinel.com${post.image}`] : [],
     datePublished: new Date(post.date).toISOString(),
     author: {
       '@type': 'Person',

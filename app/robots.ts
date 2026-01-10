@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://campus-sentinel.com/sitemap.xml', // TODO: Update domain
+        sitemap: 'https://campussentinel.com/sitemap.xml', // TODO: Update domain
     }
 }
