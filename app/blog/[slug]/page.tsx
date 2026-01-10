@@ -113,7 +113,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
             <div className="flex items-center justify-between mb-8 pb-8 border-b border-gray-200">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gray-200" />
+                <img
+                  src={post.authorImage || "/placeholder-user.jpg"}
+                  alt={post.author}
+                  className="w-12 h-12 rounded-full object-cover border border-gray-100 shadow-sm"
+                />
                 <div>
                   <div className="font-semibold text-gray-900">{post.author}</div>
                   <div className="text-sm text-gray-600">{post.authorRole}</div>
