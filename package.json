@@ -1,6 +1,7 @@
 {
-  "name": "my-v0-project",
-  "version": "0.1.0",
+  "name": "campus-sentinel",
+  "version": "1.0.0",
+  "description": "The world’s first AI-powered School ERP system designed to transform educational operations.",
   "private": true,
   "scripts": {
     "build": "next build",

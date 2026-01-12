@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { DebugSuppressor } from "@/components/debug-suppressor"
+import Script from 'next/script'
 
 import { Geist_Mono, Merriweather_Sans as V0_Font_Merriweather_Sans, Geist_Mono as V0_Font_Geist_Mono } from 'next/font/google'
 
@@ -12,22 +13,23 @@ const _merriweatherSans = V0_Font_Merriweather_Sans({ subsets: ['latin'], weight
 const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://campus-sentinel.com"), // TODO: Update with actual domain
+  metadataBase: new URL("https://campussentinel.com"), // TODO: Update with actual domain
   title: {
-    default: "Campus Sentinel - Smart School Management Platform",
+    default: "Campus Sentinel | World's First AI-Powered School ERP",
     template: "%s | Campus Sentinel",
   },
   description:
-    "Complete school management platform for principals. Track attendance, manage fees, communicate with parents, and get smart insights—all in one simple platform.",
+    "Campus Sentinel is the first AI-driven School ERP system that automates attendance via surveillance, answer sheet evaluation, and parent communication for modern schools.",
   keywords: [
+    "AI School ERP",
+    "AI Powered School Management",
+    "Automated Attendance Surveillance",
+    "AI Answer Sheet Evaluation",
+    "Smart School ERP India",
+    "Campus Safety AI",
+    "AI Student Performance Analysis",
     "School Management System",
-    "School ERP",
-    "Attendance Tracking",
-    "Fee Management",
-    "Parent Communication",
-    "School Analytics",
-    "Education Technology",
-    "Principal Dashboard",
+    "Parent Communication AI",
   ],
   authors: [{ name: "Campus Sentinel Team" }],
   creator: "Campus Sentinel",
@@ -40,14 +42,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://campus-sentinel.com",
+    url: "https://campussentinel.com",
     title: "Campus Sentinel - A smarter way to manage your school",
     description:
       "Complete school management platform for principals. Track attendance, manage fees, communicate with parents, and get smart insights.",
     siteName: "Campus Sentinel",
     images: [
       {
-        url: "/og-image.jpg", // Needs to be added to public folder ideally
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Campus Sentinel Dashboard Preview",
@@ -59,7 +61,7 @@ export const metadata: Metadata = {
     title: "Campus Sentinel - A smarter way to manage your school",
     description:
       "Complete school management platform for principals. Track attendance, manage fees, communicate with parents, and get smart insights.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
     creator: "@campussentinel",
   },
   robots: {
@@ -88,6 +90,29 @@ export default function RootLayout({
     <html lang="en" data-scroll-behavior="smooth">
       <body className={`font-sans antialiased`}>
         {children}
+        <Script
+          id="org-json-ld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Campus Sentinel',
+              url: 'https://campussentinel.com',
+              logo: 'https://campussentinel.com/images/campus-sentinel-logo.png',
+              sameAs: [
+                'https://twitter.com/campussentinel'
+              ],
+              contactPoint: {
+                '@type': 'ContactPoint',
+                telephone: '+91-761-910-7621',
+                contactType: 'sales',
+                areaServed: 'IN',
+                availableLanguage: 'en'
+              }
+            })
+          }}
+        />
         {process.env.NODE_ENV === "production" && <Analytics />}
         <DebugSuppressor />
       </body>
