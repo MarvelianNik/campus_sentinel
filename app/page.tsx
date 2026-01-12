@@ -18,7 +18,9 @@ import {
   Mail,
   MapPin,
   X,
+  HelpCircle,
 } from "lucide-react"
+import Script from "next/script"
 import Link from "next/link"
 import { useState } from "react"
 
@@ -704,6 +706,51 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
+      {/* FAQ Schema */}
+      <Script
+        id="faq-json-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Campus Sentinel?",
+                "acceptedAnswer": {
+                  "@type": "AcceptedAnswer",
+                  "text": "Campus Sentinel is an AI-powered school ERP system designed for Indian schools. It automates administrative tasks like attendance through surveillance, fee collection, exam management, and parent communication using artificial intelligence."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does AI-powered attendance work?",
+                "acceptedAnswer": {
+                  "@type": "AcceptedAnswer",
+                  "text": "Campus Sentinel uses AI-enabled surveillance cameras to automatically capture and record student attendance in real-time, eliminating the need for manual roll calls."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Campus Sentinel evaluate answer sheets?",
+                "acceptedAnswer": {
+                  "@type": "AcceptedAnswer",
+                  "text": "Yes, its AI vision system can assist in evaluating handwritten or digital answer sheets, providing consistent and fast assessment results for teachers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is it suitable for Indian CBSE and ICSE schools?",
+                "acceptedAnswer": {
+                  "@type": "AcceptedAnswer",
+                  "text": "Yes, Campus Sentinel is built to comply with Indian educational standards, including support for CBSE and ICSE report formats and local fee structures."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </div>
   )
 }

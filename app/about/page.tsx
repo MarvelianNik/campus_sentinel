@@ -63,32 +63,68 @@ export default function AboutPage() {
                             The World’s First AI-Powered School ERP
                         </Badge>
                         <h1 className="text-4xl lg:text-5xl lg:leading-tight font-bold text-gray-900 mb-6 text-balance">
-                            Transforming Schools with Intelligent Automation
+                            We're building the future of school management—starting with AI.
                         </h1>
                         <p className="text-lg text-gray-600 leading-relaxed text-pretty mb-8">
-                            Campus Sentinel is the world’s first AI-powered School ERP system designed to transform how educational
-                            institutions operate, monitor, and communicate—by combining intelligent automation with everyday school
-                            management.
+                            Let's be honest: most school software is clunky and creates more work than it saves.
+                            We built Campus Sentinel because we believe technology should actually *help* you run your school, not just store your files.
                         </p>
                         <p className="text-lg text-gray-600 leading-relaxed text-pretty">
-                            Built for modern schools, Campus Sentinel goes beyond traditional ERP software by embedding artificial
-                            intelligence at the core of campus operations, enabling schools to save time, improve accuracy, enhance
-                            safety, and deliver better outcomes for students, teachers, and parents.
+                            By putting AI at the center of everyday tasks like attendance and security, we're helping schools across India reclaim their time so they can focus on what really matters—teaching and growing students.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* Vision Section */}
-            <section className="py-16 bg-white">
+            {/* Vision & Founder's Message Section */}
+            <section className="py-16 bg-white overflow-hidden">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-4xl mx-auto">
-                        <div className="bg-gradient-to-br from-[#25634A] to-[#1e4d3a] rounded-3xl p-8 md:p-12 text-center shadow-xl text-white">
-                            <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
-                            <p className="text-xl leading-relaxed text-blue-50">
-                                "To create intelligent, secure, and data-driven school campuses where administrators focus on growth,
-                                teachers focus on teaching, and students focus on learning—while AI handles the rest."
-                            </p>
+                    <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                        <div className="space-y-8">
+                            <div className="bg-gradient-to-br from-[#25634A] to-[#1e4d3a] rounded-3xl p-8 md:p-10 shadow-xl text-white">
+                                <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                                    <TrendingUp className="h-6 w-6" /> Our Vision
+                                </h2>
+                                <p className="text-lg leading-relaxed text-blue-50 italic">
+                                    "To create intelligent, secure, and data-driven school campuses where administrators focus on growth,
+                                    teachers focus on teaching, and students focus on learning—while AI handles the rest."
+                                </p>
+                            </div>
+                            <div className="bg-blue-50 rounded-2xl p-8 border border-blue-100 relative overflow-hidden">
+                                <div className="absolute top-0 right-0 p-4 opacity-10">
+                                    <School className="h-24 w-24 text-[#2563EB]" />
+                                </div>
+                                <div className="flex items-center gap-2 mb-4">
+                                    <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-0 text-[10px] uppercase tracking-tighter px-2">Made in India</Badge>
+                                    <h3 className="text-xl font-bold text-gray-900">India's AI Education Pioneer</h3>
+                                </div>
+                                <p className="text-gray-600 leading-relaxed mb-4 relative z-10">
+                                    Campus Sentinel is proudly founded and headquartered in **India**. As a product of the **Maximus Consultancy Services Group**, we understand the unique challenges and vast potential of the Indian education system.
+                                </p>
+                                <p className="text-gray-600 leading-relaxed relative z-10">
+                                    Our mission is to empower Indian schools with global-standard AI technology that remains accessible, scalable, and deeply relevant to local operational needs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="relative">
+                            <div className="absolute -top-4 -left-4 w-24 h-24 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                            <div className="absolute top-0 -right-4 w-24 h-24 bg-green-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                            <Card className="p-8 relative bg-white/80 backdrop-blur-sm border-blue-100 shadow-xl rounded-3xl">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-6 font-primary">The Mission Behind the Code</h3>
+                                <div className="space-y-6 text-gray-600 leading-relaxed">
+                                    <p>
+                                        "For too long, school ERPs have been nothing more than digital filing cabinets—passive containers for data. At Campus Sentinel, we started with a simple question: *What if the system actually helped you run the school?*"
+                                    </p>
+                                    <p>
+                                        "We wanted to build something where AI evaluation gives students fair results, where automated security keeps every campus safe, and where the boring paperwork just vanishes. We aren't just selling software; we're building a partner for every principal and teacher who's ever felt overwhelmed by administrative work."
+                                    </p>
+                                    <div className="pt-4 border-t border-gray-100">
+                                        <p className="font-bold text-gray-900 text-sm">Founder, Campus Sentinel</p>
+                                        <p className="text-xs text-gray-400 mt-1 uppercase tracking-wider font-semibold">Maximus Consultancy Services Group</p>
+                                    </div>
+                                </div>
+                            </Card>
                         </div>
                     </div>
                 </div>
@@ -299,23 +335,25 @@ export default function AboutPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-semibold text-gray-900 mb-4">Legal</h4>
-                            <ul className="space-y-2 text-sm text-gray-600">
-                                <li>
-                                    <Link href="#" className="hover:text-gray-900">
-                                        Privacy
-                                    </Link>
+                            <h4 className="font-semibold text-gray-900 mb-4">Contact Us</h4>
+                            <ul className="space-y-4 text-sm text-gray-600">
+                                <li className="flex items-start gap-3">
+                                    <div className="mt-1"><School className="h-4 w-4 text-[#2563EB]" /></div>
+                                    <span>
+                                        Maximus Consultancy Services Group<br />
+                                        India
+                                    </span>
                                 </li>
-                                <li>
-                                    <Link href="#" className="hover:text-gray-900">
-                                        Terms
-                                    </Link>
+                                <li className="flex items-center gap-3">
+                                    <MessageCircle className="h-4 w-4 text-[#2563EB]" />
+                                    <a href="mailto:contact@campussentinel.com" className="hover:text-gray-900">contact@campussentinel.com</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div className="pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-                        <p className="mt-2">Maximus consultancy services</p>
+                        <p>© {new Date().getFullYear()} Maximus Consultancy Services Group. All rights reserved.</p>
+                        <p className="mt-2 text-xs opacity-50 font-medium tracking-widest uppercase">AI-POWERED EDUCATION BACKBONE</p>
                     </div>
                 </div>
             </footer>

@@ -91,26 +91,53 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {children}
         <Script
-          id="org-json-ld"
+          id="schema-json-ld"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'Campus Sentinel',
-              url: 'https://campussentinel.com',
-              logo: 'https://campussentinel.com/images/campus-sentinel-logo.png',
-              sameAs: [
-                'https://twitter.com/campussentinel'
-              ],
-              contactPoint: {
-                '@type': 'ContactPoint',
-                telephone: '+91-761-910-7621',
-                contactType: 'sales',
-                areaServed: 'IN',
-                availableLanguage: 'en'
+            __html: JSON.stringify([
+              {
+                '@context': 'https://schema.org',
+                '@type': 'Organization',
+                '@id': 'https://campussentinel.com/#organization',
+                name: 'Maximus Consultancy Services Group',
+                alternateName: 'Campus Sentinel',
+                url: 'https://campussentinel.com',
+                logo: 'https://campussentinel.com/images/campus-sentinel-logo.png',
+                sameAs: [
+                  'https://twitter.com/campussentinel'
+                ],
+                contactPoint: {
+                  '@type': 'ContactPoint',
+                  telephone: '+91-761-910-7621',
+                  contactType: 'sales',
+                  areaServed: 'IN',
+                  availableLanguage: 'en'
+                }
+              },
+              {
+                '@context': 'https://schema.org',
+                '@type': 'SoftwareApplication',
+                name: 'Campus Sentinel',
+                operatingSystem: 'Any',
+                applicationCategory: 'EducationApplication',
+                description: 'AI-Powered School ERP system for automating attendance, fees, and academic evaluations.',
+                category: 'AI-Powered School ERP Software',
+                offers: {
+                  '@type': 'Offer',
+                  price: '0',
+                  priceCurrency: 'INR'
+                },
+                aggregateRating: {
+                  '@type': 'AggregateRating',
+                  ratingValue: '4.8',
+                  ratingCount: '150'
+                },
+                author: {
+                  '@type': 'Organization',
+                  '@id': 'https://campussentinel.com/#organization'
+                }
               }
-            })
+            ])
           }}
         />
         {process.env.NODE_ENV === "production" && <Analytics />}

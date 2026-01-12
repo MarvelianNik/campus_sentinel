@@ -270,7 +270,7 @@ export default function WhatIsCampusSentinel() {
                         </div>
                     </div>
                     <div className="pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-                        <p className="mt-2">Maximus consultancy services</p>
+                        <p>© {new Date().getFullYear()} Maximus Consultancy Services Group. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
