@@ -107,39 +107,30 @@ export default function RootLayout({
                 {
                   "@type": "Organization",
                   "@id": "https://campussentinel.com/#organization",
-                  "name": "Maximus Consultancy Services Group",
-                  "alternateName": "Campus Sentinel",
+                  "name": "Campus Sentinel",
                   "url": "https://campussentinel.com",
                   "logo": "https://campussentinel.com/images/campus-sentinel-logo.png",
-                  "sameAs": ["https://twitter.com/campussentinel"],
-                  "contactPoint": {
-                    "@type": "ContactPoint",
-                    "telephone": "+91-761-910-7621",
-                    "contactType": "sales",
-                    "areaServed": "IN",
-                    "availableLanguage": "en"
-                  }
+                  "description": "Campus Sentinel is an AI-powered school ERP software designed to help Indian schools manage attendance, fees, exams, communication, and analytics intelligently.",
+                  "sameAs": [
+                    "https://www.linkedin.com/company/campus-sentinel"
+                  ]
                 },
                 {
                   "@type": "SoftwareApplication",
+                  "@id": "https://campussentinel.com/#software",
                   "name": "Campus Sentinel",
-                  "operatingSystem": "Any",
-                  "applicationCategory": "EducationApplication",
-                  "description": "AI-Powered School ERP system for automating attendance, fees, and academic evaluations.",
-                  "category": "AI-Powered School ERP Software",
+                  "operatingSystem": "Web-based",
+                  "applicationCategory": "AI-Powered School ERP Software",
+                  "applicationSubCategory": "Education Management System",
+                  "description": "Campus Sentinel is an AI-powered education management software that helps schools automate operations, gain insights, and improve academic and administrative decision-making.",
+                  "publisher": {
+                    "@id": "https://campussentinel.com/#organization"
+                  },
                   "offers": {
                     "@type": "Offer",
                     "price": "0",
-                    "priceCurrency": "INR"
-                  },
-                  "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.8",
-                    "ratingCount": "150"
-                  },
-                  "author": {
-                    "@type": "Organization",
-                    "@id": "https://campussentinel.com/#organization"
+                    "priceCurrency": "INR",
+                    "availability": "https://schema.org/InStock"
                   }
                 }
               ]

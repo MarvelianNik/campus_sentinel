@@ -29,6 +29,31 @@ export default function AboutPage() {
 
     return (
         <div className="min-h-screen bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "SoftwareApplication",
+                        "@id": "https://campussentinel.com/#software",
+                        "name": "Campus Sentinel",
+                        "operatingSystem": "Web-based",
+                        "applicationCategory": "AI-Powered School ERP Software",
+                        "applicationSubCategory": "Education Management System",
+                        "description": "Campus Sentinel is an AI-powered education management software that helps schools automate operations, gain insights, and improve academic and administrative decision-making.",
+                        "publisher": {
+                            "@type": "Organization",
+                            "@id": "https://campussentinel.com/#organization"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "0",
+                            "priceCurrency": "INR",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    })
+                }}
+            />
             <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
             {/* Header */}
             <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
