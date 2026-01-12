@@ -102,4 +102,15 @@
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
 </url>
+<url>
+<loc>https://campussentinel.com/blog/why-school-erp-essential-cbse-2026</loc>
+<lastmod>2026-01-10T06:39:55.324Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.6</priority>
+</url>
+  <url>
+    <loc>https://campussentinel.com/blog/what-defines-best-ai-school-erp-2026</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.64</priority>
+  </url>
 </urlset>

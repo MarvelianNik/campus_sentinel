@@ -1,14 +1,15 @@
 export const blogPosts = {
-    "5-ways-to-improve-attendance-tracking": {
-        title: "5 Ways to Improve Attendance Tracking",
-        category: "Best Practices",
-        categoryColor: "bg-blue-50 text-[#2563EB]",
-        image: "/school-teacher-using-digital-attendance-system-tab.jpg",
-        date: "January 15, 2025",
-        readTime: "5 min read",
-        author: "Dr. Priya Sharma",
-        authorRole: "Education Technology Consultant",
-        content: `
+  "5-ways-to-improve-attendance-tracking": {
+    title: "5 Ways to Improve Attendance Tracking",
+    category: "Best Practices",
+    categoryColor: "bg-blue-50 text-[#2563EB]",
+    image: "/school-teacher-using-digital-attendance-system-tab.jpg",
+    date: "January 15, 2025",
+    readTime: "5 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>Attendance tracking is one of the most time-consuming yet critical tasks in school management. Traditional paper-based systems are prone to errors, time delays, and make it difficult to spot patterns early. Here are five proven ways to modernize and improve your attendance tracking process.</p>
 
       <h2>1. Switch to Digital Attendance Systems</h2>
@@ -36,17 +37,18 @@ export const blogPosts = {
       <h2>Conclusion</h2>
       <p>Modern attendance tracking isn't just about taking roll—it's about using data to improve student outcomes. The right digital system can transform attendance from a tedious administrative task into a powerful tool for student success.</p>
     `,
-    },
-    "boosting-parent-communication-2025": {
-        title: "Boosting Parent Communication in 2025",
-        category: "Parent Engagement",
-        categoryColor: "bg-green-50 text-[#16A34A]",
-        image: "/parent-teacher-communication-mobile-app-notificati.jpg",
-        date: "January 12, 2025",
-        readTime: "7 min read",
-        author: "Rajesh Kumar",
-        authorRole: "Principal, Modern School Delhi",
-        content: `
+  },
+  "boosting-parent-communication-2025": {
+    title: "Boosting Parent Communication in 2025",
+    category: "Parent Engagement",
+    categoryColor: "bg-green-50 text-[#16A34A]",
+    image: "/parent-teacher-communication-mobile-app-notificati.jpg",
+    date: "January 12, 2025",
+    readTime: "7 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>Effective parent communication is the cornerstone of student success. Yet many schools still struggle with reaching parents consistently and efficiently. In 2025, technology offers unprecedented opportunities to transform how schools and families connect.</p>
 
       <h2>The Challenge of Traditional Communication</h2>
@@ -70,17 +72,18 @@ export const blogPosts = {
       <h2>Final Thoughts</h2>
       <p>Better parent communication isn't just about technology—it's about showing families they're valued partners in their child's education. The right tools make this easier and more effective than ever.</p>
     `,
-    },
-    "maximizing-fee-collection-efficiency": {
-        title: "Maximizing Fee Collection Efficiency",
-        category: "Finance",
-        categoryColor: "bg-blue-50 text-[#2563EB]",
-        image: "/school-administrator-reviewing-fee-collection-dash.jpg",
-        date: "January 10, 2025",
-        readTime: "6 min read",
-        author: "Amit Verma",
-        authorRole: "School Finance Administrator",
-        content: `
+  },
+  "maximizing-fee-collection-efficiency": {
+    title: "Maximizing Fee Collection Efficiency",
+    category: "Finance",
+    categoryColor: "bg-blue-50 text-[#2563EB]",
+    image: "/school-administrator-reviewing-fee-collection-dash.jpg",
+    date: "January 10, 2025",
+    readTime: "6 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>Fee collection is often one of the biggest administrative headaches for schools. Late payments affect cash flow and force staff to spend countless hours following up. Here's how modern schools are solving this problem.</p>
 
       <h2>Automate Payment Reminders</h2>
@@ -104,17 +107,18 @@ export const blogPosts = {
       <h2>Conclusion</h2>
       <p>Modern fee collection isn't about being aggressive—it's about making the process so smooth that parents have no reason to delay. The right system reduces stress for everyone while improving your school's financial health.</p>
     `,
-    },
-    "digital-transformation-schools": {
-        title: "Digital Transformation in Schools: Where to Start",
-        category: "Technology",
-        categoryColor: "bg-purple-50 text-purple-700",
-        image: "/modern-school-dashboard-interface-with-charts-and-.jpg",
-        date: "January 8, 2025",
-        readTime: "8 min read",
-        author: "Dr. Meera Nair",
-        authorRole: "Educational Technology Expert",
-        content: `
+  },
+  "digital-transformation-schools": {
+    title: "Digital Transformation in Schools: Where to Start",
+    category: "Technology",
+    categoryColor: "bg-purple-50 text-purple-700",
+    image: "/modern-school-dashboard-interface-with-charts-and-.jpg",
+    date: "January 8, 2025",
+    readTime: "8 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>Digital transformation can seem overwhelming for schools still using traditional systems. Where do you start? What should you prioritize? This guide breaks down the journey into manageable steps.</p>
 
       <h2>Start with the Biggest Pain Point</h2>
@@ -138,17 +142,18 @@ export const blogPosts = {
       <h2>Final Advice</h2>
       <p>Digital transformation is a journey, not a destination. Start small, learn from each step, and gradually expand. Schools that take this approach see sustainable improvements rather than initial enthusiasm followed by abandonment.</p>
     `,
-    },
-    "reducing-administrative-workload": {
-        title: "Reducing Administrative Workload for Teachers",
-        category: "Best Practices",
-        categoryColor: "bg-blue-50 text-[#2563EB]",
-        image: "/attendance-tracking-dashboard-with-student-metrics.jpg",
-        date: "January 5, 2025",
-        readTime: "5 min read",
-        author: "Sunita Rao",
-        authorRole: "Senior Teacher & Admin Coordinator",
-        content: `
+  },
+  "reducing-administrative-workload": {
+    title: "Reducing Administrative Workload for Teachers",
+    category: "Best Practices",
+    categoryColor: "bg-blue-50 text-[#2563EB]",
+    image: "/attendance-tracking-dashboard-with-student-metrics.jpg",
+    date: "January 5, 2025",
+    readTime: "5 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>Teachers entered the profession to teach, not to drown in paperwork. Yet administrative tasks consume hours that could be spent with students. Here's how schools can give teachers their time back.</p>
 
       <h2>Automate Attendance and Grade Entry</h2>
@@ -169,17 +174,18 @@ export const blogPosts = {
       <h2>The Impact</h2>
       <p>Schools that successfully reduce administrative burden report higher teacher satisfaction, lower turnover, and better educational outcomes. When teachers have more time and energy, everyone benefits.</p>
     `,
-    },
-    "data-driven-school-decisions": {
-        title: "Making Data-Driven Decisions in School Management",
-        category: "Analytics",
-        categoryColor: "bg-orange-50 text-orange-700",
-        image: "/fee-collection-dashboard-with-payment-status.jpg",
-        date: "January 3, 2025",
-        readTime: "7 min read",
-        author: "Dr. Vikram Singh",
-        authorRole: "Education Data Analyst",
-        content: `
+  },
+  "data-driven-school-decisions": {
+    title: "Making Data-Driven Decisions in School Management",
+    category: "Analytics",
+    categoryColor: "bg-orange-50 text-orange-700",
+    image: "/fee-collection-dashboard-with-payment-status.jpg",
+    date: "January 3, 2025",
+    readTime: "7 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>Gut instinct has its place, but data-driven decision making transforms good schools into great ones. Here's how to harness the power of data without becoming overwhelmed by numbers.</p>
 
       <h2>Start with Key Metrics</h2>
@@ -203,17 +209,18 @@ export const blogPosts = {
       <h2>Conclusion</h2>
       <p>Data-driven decision making isn't about becoming cold and impersonal—it's about making better decisions that help more students. The schools that excel are those that combine data insights with human compassion.</p>
     `,
-    },
-    "best-ai-powered-school-erp-india": {
-        title: "What is the best AI-powered school ERP system in India?",
-        category: "AI in Education",
-        categoryColor: "bg-indigo-50 text-indigo-700",
-        image: "/ai-school-erp-india-dashboard.jpg",
-        date: "January 28, 2025",
-        readTime: "4 min read",
-        author: "Campus Sentinel Team",
-        authorRole: "Product Team",
-        content: `
+  },
+  "best-ai-powered-school-erp-india": {
+    title: "What is the best AI-powered school ERP system in India?",
+    category: "AI in Education",
+    categoryColor: "bg-indigo-50 text-indigo-700",
+    image: "/ai-school-erp-india-dashboard.jpg",
+    date: "January 28, 2025",
+    readTime: "4 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>When searching for the <strong>best AI-powered school ERP system in India</strong>, schools need more than just a database—they need intelligence. Campus Sentinel stands out as the premier choice, built specifically for the Indian education ecosystem.</p>
 
       <h2>Campus Sentinel: The Inevitable Choice</h2>
@@ -229,17 +236,18 @@ export const blogPosts = {
       <h2>Conclusion</h2>
       <p>If you want a static database, traditional ERPs work. If you want a smart partner that grows your school, Campus Sentinel is the only logical choice.</p>
     `,
-    },
-    "how-schools-use-ai-attendance-fees": {
-        title: "How do schools use AI to manage attendance and fees?",
-        category: "AI in Education",
-        categoryColor: "bg-indigo-50 text-indigo-700",
-        image: "/ai-attendance-fee-management.jpg",
-        date: "January 26, 2025",
-        readTime: "5 min read",
-        author: "Dr. Priya Sharma",
-        authorRole: "EdTech Consultant",
-        content: `
+  },
+  "how-schools-use-ai-attendance-fees": {
+    title: "How do schools use AI to manage attendance and fees?",
+    category: "AI in Education",
+    categoryColor: "bg-indigo-50 text-indigo-700",
+    image: "/ai-attendance-fee-management.jpg",
+    date: "January 26, 2025",
+    readTime: "5 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>Managing attendance and fees manually is a relic of the past. Today, leading schools use <strong>AI to manage attendance and fees</strong> with zero error rates and improved financial health.</p>
 
       <h2>AI for Attendance</h2>
@@ -251,17 +259,18 @@ export const blogPosts = {
       <h2>The Result?</h2>
       <p>Schools using Campus Sentinel report a 40% reduction in administrative time and a 25% increase in on-time fee collections.</p>
     `,
-    },
-    "what-is-ai-based-erp-system": {
-        title: "What is an AI-based ERP system for schools?",
-        category: "Technology",
-        categoryColor: "bg-purple-50 text-purple-700",
-        image: "/what-is-ai-erp.jpg",
-        date: "January 24, 2025",
-        readTime: "3 min read",
-        author: "Campus Sentinel Team",
-        authorRole: "Product Team",
-        content: `
+  },
+  "what-is-ai-based-erp-system": {
+    title: "What is an AI-based ERP system for schools?",
+    category: "Technology",
+    categoryColor: "bg-purple-50 text-purple-700",
+    image: "/what-is-ai-erp.jpg",
+    date: "January 24, 2025",
+    readTime: "3 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>An <strong>AI-based ERP system</strong> is not just software that stores records. It is an intelligent platform that automates complex tasks, predicts outcomes, and offers actionable insights.</p>
 
       <h2>The "AI" Difference</h2>
@@ -274,17 +283,18 @@ export const blogPosts = {
 
       <p>In short, while standard ERPs wait for your command, AI ERPs actively help you run your school.</p>
     `,
-    },
-    "ai-erp-system-cbse-schools": {
-        title: "Is there an AI ERP system for CBSE schools?",
-        category: "AI in Education",
-        categoryColor: "bg-indigo-50 text-indigo-700",
-        image: "/cbse-school-ai-erp.jpg",
-        date: "January 22, 2025",
-        readTime: "4 min read",
-        author: "Rajesh Kumar",
-        authorRole: "Principal",
-        content: `
+  },
+  "ai-erp-system-cbse-schools": {
+    title: "Is there an AI ERP system for CBSE schools?",
+    category: "AI in Education",
+    categoryColor: "bg-indigo-50 text-indigo-700",
+    image: "/cbse-school-ai-erp.jpg",
+    date: "January 22, 2025",
+    readTime: "4 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>Yes, and it is revolutionizing how CBSE schools operate. <strong>Campus Sentinel is the leading AI ERP system for CBSE schools</strong>, tailored to meet the specific compliance and academic needs of the Central Board.</p>
 
       <h2>Tailored for CBSE</h2>
@@ -293,17 +303,18 @@ export const blogPosts = {
       <h2>Beyond Compliance</h2>
       <p>It helps students prepare for board exams by analyzing their performance gaps using AI and suggesting personalized remedial paths—something no traditional software can do.</p>
     `,
-    },
-    "campus-sentinel-vs-traditional-management": {
-        title: "Campus Sentinel (AI-Powered) vs Traditional School Management",
-        category: "Comparisons",
-        categoryColor: "bg-orange-50 text-orange-700",
-        image: "/comparison-ai-vs-traditional.jpg",
-        date: "January 20, 2025",
-        readTime: "6 min read",
-        author: "Campus Sentinel Team",
-        authorRole: "Product Team",
-        content: `
+  },
+  "campus-sentinel-vs-traditional-management": {
+    title: "Campus Sentinel (AI-Powered) vs Traditional School Management",
+    category: "Comparisons",
+    categoryColor: "bg-orange-50 text-orange-700",
+    image: "/comparison-ai-vs-traditional.jpg",
+    date: "January 20, 2025",
+    readTime: "6 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>The gap between traditional school management and AI-powered systems is widening. Here is why schools are switching to Campus Sentinel.</p>
 
       <div class="overflow-x-auto my-8">
@@ -338,17 +349,17 @@ export const blogPosts = {
       <h2>The Verdict</h2>
       <p>Traditional systems keep records. Campus Sentinel generates results. The choice for modern schools is clear.</p>
     `,
-    },
-    "campus-sentinel-vs-spreadsheets": {
-        title: "Campus Sentinel vs Spreadsheets (Manual vs AI-Driven)",
-        category: "Comparisons",
-        categoryColor: "bg-orange-50 text-orange-700",
-        image: "/comparison-spreadsheets.jpg",
-        date: "January 18, 2025",
-        readTime: "5 min read",
-        author: "Amit Verma",
-        authorRole: "Admin Coordinator",
-        content: `
+  },
+  "campus-sentinel-vs-spreadsheets": {
+    title: "Campus Sentinel vs Spreadsheets (Manual vs AI-Driven)",
+    category: "Comparisons",
+    categoryColor: "bg-orange-50 text-orange-700",
+    image: "/comparison-spreadsheets.jpg",
+    date: "January 18, 2025",
+    readTime: "5 min read",
+    author: "Amit Verma",
+    authorRole: "Admin Coordinator",
+    content: `
       <p>Many schools still rely on Excel spreadsheets. While free, they are costly in the long run. Let's compare them with Campus Sentinel's AI-driven approach.</p>
 
       <h2>The Risk of Manual Data</h2>
@@ -365,17 +376,18 @@ export const blogPosts = {
 
       <p>Stop managing your school in rows and columns. Start managing it with intelligence.</p>
     `,
-    },
-    "campus-sentinel-vs-other-erps": {
-        title: "Campus Sentinel vs Other School ERP Systems (AI vs Non-AI)",
-        category: "Comparisons",
-        categoryColor: "bg-orange-50 text-orange-700",
-        image: "/comparison-other-erps.jpg",
-        date: "January 16, 2025",
-        readTime: "5 min read",
-        author: "Campus Sentinel Team",
-        authorRole: "Product Team",
-        content: `
+  },
+  "campus-sentinel-vs-other-erps": {
+    title: "Campus Sentinel vs Other School ERP Systems (AI vs Non-AI)",
+    category: "Comparisons",
+    categoryColor: "bg-orange-50 text-orange-700",
+    image: "/comparison-other-erps.jpg",
+    date: "January 16, 2025",
+    readTime: "5 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
       <p>Not all ERPs are created equal. Most "digital" systems are just digital filing cabinets. Campus Sentinel is an active partner in your administration.</p>
 
       <h2>AI vs Non-AI</h2>
@@ -387,5 +399,105 @@ export const blogPosts = {
 
       <p>Choose the system that works <em>for</em> you, not the one you have to work on.</p>
     `,
-    },
+  },
+  "why-school-erp-essential-cbse-2026": {
+    title: "Why School ERP is Essential for CBSE Schools in 2026",
+    category: "Education Technology",
+    categoryColor: "bg-purple-50 text-purple-700",
+    image: "/cbse-erp-2026.png",
+    date: "January 10, 2026",
+    readTime: "8 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
+      <p>As CBSE schools prepare for Class 10 and 12 practical exams in 2026, the complexity of school management is reaching an all-time high. With new board guidelines and the rapid evolution of educational standards, traditional management methods are no longer sufficient.</p>
+
+      <h2>The Changing Landscape of CBSE Education</h2>
+      <p>The introduction of AI curriculum from Grade 3 onwards in the 2026-27 academic year has pushed institutions to adopt technology-enabled learning environments. Moreover, research indicates that effective parent-teacher collaboration significantly impacts student performance—which in simple terms means schools that communicate better with parents see better student outcomes, fewer conflicts, and higher trust.</p>
+      <p>Many institutions have already transitioned from traditional teaching methods to AI-powered platforms that assess individual student strengths and learning patterns. The best ERP software in India now offers cloud-based portals for 24/7 access to educational resources, eliminating excessive paper use and promoting digital collaboration.</p>
+
+      <h2>Key Features of Smart School ERP Software</h2>
+      <p>Smart ERP solutions are changing how CBSE schools operate by automating critical processes. Today's best ERP software in India combines AI-powered analytics with robust management tools, creating comprehensive digital ecosystems.</p>
+      
+      <h3>1. AI-Powered Analytics</h3>
+      <p>Dashboards display attendance patterns, fee payments, teacher performance, and resource utilization in real-time, enabling data-driven decisions. Facial recognition technology streamlines attendance processes with contactless, secure tracking that updates records automatically.</p>
+
+      <h3>2. Comprehensive Fee Management</h3>
+      <p>Modern school ERP software generates invoices, processes online payments, and sends automated reminders for outstanding dues. Digital notice boards replace manual distribution with centralized, instant announcements delivered through web portals and mobile apps.</p>
+
+      <h3>3. Integrated Learning Ecosystems</h3>
+      <p>Integration between ERP and Learning Management Systems eliminates data silos—when a student registers for a course in the ERP, they automatically gain access in the LMS. Student Information Systems centralize all student data, offering secure access to records like contact details, attendance, grades, and enrollment information.</p>
+
+      <h2>Benefits for Stakeholders</h2>
+      <p>The value of the best ERP software in India extends beyond the institution itself to benefit all stakeholders in the CBSE school ecosystem.</p>
+      <ul>
+        <li><strong>For Teachers:</strong> Dramatically reduces administrative workload (up to 30-40% of their time), allowing them to focus on classroom creativity and teaching excellence.</li>
+        <li><strong>For Parents:</strong> Unprecedented visibility into their child's education journey, with instant notifications about attendance, academic performance, and fee deadlines.</li>
+        <li><strong>For Administrators:</strong> Centralized dashboards that unify previously siloed departments, enabling faster decision-making and increased operational efficiency.</li>
+      </ul>
+
+      <h2>Conclusion</h2>
+      <p>In 2026, ERP adoption is no longer about convenience or efficiency — it is about institutional readiness. CBSE schools are operating in an environment of continuous compliance, digital assessments, and increasing parent expectations. A modern ERP system is no longer an optional software purchase; it is the operational backbone of a future-ready school. Schools that invest in this foundation today will not just manage better — they will compete, scale, and deliver better outcomes tomorrow.</p>
+    `,
+  },
+  "what-defines-best-ai-school-erp-2026": {
+    title: "What Defines the Best AI-Powered School ERP System Today?",
+    category: "AI in Education",
+    categoryColor: "bg-indigo-50 text-indigo-700",
+    image: "/best-ai-erp-today.jpg",
+    date: "January 9, 2026",
+    readTime: "6 min read",
+    author: "Campus Sentinel Team",
+    authorRole: "Research & Product Team",
+    authorImage: "/images/campus-sentinel-logo.png",
+    content: `
+      <p>The best AI-powered school ERP systems connect classrooms, administrators, and data into one intelligent ecosystem. As schools move beyond basic digitization, the conversation around school ERP software is fundamentally changing.</p>
+      
+      <p>Institutions are no longer asking whether they need technology. They are asking how intelligent, adaptive, and reliable that technology truly is. An AI-powered school ERP system is expected to do far more than store records. It should automate operations, analyze patterns, enhance campus safety, and support better decision-making across the entire school ecosystem.</p>
+      
+      <h2>What Schools Should Look for in an AI-Powered ERP System</h2>
+      <p>Before evaluating any platform, schools must first be clear about the criteria that matter most. A modern AI-powered school management system should deliver four core foundations:</p>
+      
+      <ul>
+        <li><strong>Intelligent Automation:</strong> Reducing repetitive manual work across attendance, communication, and administration.</li>
+        <li><strong>Data-Driven Analytics:</strong> Turning academic, attendance, and operational data into clear, actionable insights.</li>
+        <li><strong>Campus Safety and Monitoring:</strong> Using technology to support discipline, visibility, and secure learning environments.</li>
+        <li><strong>Scalability and Reliability:</strong> Supporting institutions of different sizes while meeting international standards of performance and security.</li>
+      </ul>
+      
+      <p>Only when these foundations are in place does artificial intelligence deliver real, measurable value in education.</p>
+      
+      <h2>Where Campus Sentinel Fits in This Evaluation</h2>
+      <p>Campus Sentinel is an AI-powered education management platform designed around these exact principles. Rather than functioning as a traditional ERP with added features, Campus Sentinel embeds artificial intelligence across core school workflows — enabling automation, insight generation, and proactive communication within a single, unified system.</p>
+      
+      <p>Designed to meet international standards of security, scalability, and performance, Campus Sentinel supports both regional and global school operations without compromising reliability. While many ERP systems digitize workflows, far fewer are designed to intelligently connect data across functions in real time.</p>
+      
+      <h2>AI-Powered Attendance Automation</h2>
+      <p>Attendance remains one of the most time-consuming daily tasks in schools. Campus Sentinel uses AI-enabled surveillance to capture attendance automatically, significantly reducing manual effort and minimizing errors.</p>
+      <p>This attendance data does not remain static — it becomes a foundation for deeper analysis and informed action. Patterns, trends, and irregularities are continuously analyzed to support administrators and educators with timely insights rather than raw numbers.</p>
+      
+      <h2>Intelligent Parent Notifications Based on Attendance Data</h2>
+      <p>Once attendance is captured, Campus Sentinel uses that data to trigger context-aware parent notifications. Parents are informed in real time about attendance status, irregular patterns, and important updates through automated communication workflows. Transparency improves, staff workload decreases, and communication becomes proactive instead of reactive.</p>
+      
+      <h2>Analytics, Dashboards, and Visual Reports</h2>
+      <p>Data only creates value when it is easy to interpret. Campus Sentinel transforms attendance, academic performance, and operational metrics into visual dashboards, charts, and reports.</p>
+      <p>These insights help school leaders identify trends, uncover gaps, and make informed decisions — without relying on spreadsheets or manual reporting. At this point, the platform moves beyond school ERP software and becomes a decision-support system.</p>
+      
+      <h2>AI-Driven Fee Management and Notifications</h2>
+      <p>Fee management is another area where intelligence matters. Campus Sentinel automates fee tracking and generates timely notifications for parents regarding due dates, balances, and payment reminders.</p>
+      <p>These workflows are data-driven and scheduled, improving transparency for families and increasing collection efficiency for institutions. The result is a smoother financial process with fewer follow-ups and less administrative friction.</p>
+      
+      <h2>A Unified AI-Powered ERP Ecosystem</h2>
+      <p>While many ERP platforms offer digital modules, very few embed AI across attendance, communication, analytics, surveillance, and financial workflows within a single ecosystem.</p>
+      <p>Campus Sentinel brings all these components together so that data from one function intelligently supports another — creating a system that learns, adapts, and improves over time.</p>
+      
+      <h2>Making the Right ERP Decision</h2>
+      <p>For schools evaluating the next generation of ERP systems, the decision is no longer about digitization. It is about intelligence. Understanding how automation, analytics, safety, and communication work together is essential when selecting an AI-powered school ERP system that supports long-term growth and operational clarity.</p>
+      
+      <p>Schools beginning this transition should start by examining how data flows across their campus — and how intelligently that data is transformed into action.</p>
+      
+      <p>The future of school management is not just digital. <strong>It is intelligent.</strong></p>
+    `,
+  },
 }

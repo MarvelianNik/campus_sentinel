@@ -8,154 +8,16 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
+import { blogPosts } from "@/lib/blog-data"
+
 export default function BlogPage() {
   const [showContactModal, setShowContactModal] = useState(false)
 
-  const blogPosts = [
-    {
-      slug: "5-ways-to-improve-attendance-tracking",
-      title: "5 Ways to Improve Attendance Tracking",
-      excerpt:
-        "Learn how digital attendance systems can save time and improve accuracy in your school. Discover best practices for implementation and staff adoption.",
-      category: "Best Practices",
-      categoryColor: "bg-blue-50 text-[#2563EB]",
-      image: "/school-teacher-using-digital-attendance-system-tab.jpg",
-      date: "January 15, 2025",
-      readTime: "5 min read",
-    },
-    {
-      slug: "boosting-parent-communication-2025",
-      title: "Boosting Parent Communication in 2025",
-      excerpt:
-        "Discover effective strategies to keep parents informed and engaged with your school. Learn how instant notifications can transform parent-teacher relationships.",
-      category: "Parent Engagement",
-      categoryColor: "bg-green-50 text-[#16A34A]",
-      image: "/parent-teacher-communication-mobile-app-notificati.jpg",
-      date: "January 12, 2025",
-      readTime: "7 min read",
-    },
-    {
-      slug: "maximizing-fee-collection-efficiency",
-      title: "Maximizing Fee Collection Efficiency",
-      excerpt:
-        "Simple tips to improve your school's fee collection rate and reduce payment delays. Automated reminders and online payments make a huge difference.",
-      category: "Finance",
-      categoryColor: "bg-blue-50 text-[#2563EB]",
-      image: "/school-administrator-reviewing-fee-collection-dash.jpg",
-      date: "January 10, 2025",
-      readTime: "6 min read",
-    },
-    {
-      slug: "digital-transformation-schools",
-      title: "Digital Transformation in Schools: Where to Start",
-      excerpt:
-        "A practical guide for principals on beginning your school's digital journey. Learn which systems to prioritize and common pitfalls to avoid.",
-      category: "Technology",
-      categoryColor: "bg-purple-50 text-purple-700",
-      image: "/modern-school-dashboard-interface-with-charts-and-.jpg",
-      date: "January 8, 2025",
-      readTime: "8 min read",
-    },
-    {
-      slug: "reducing-administrative-workload",
-      title: "Reducing Administrative Workload for Teachers",
-      excerpt:
-        "Explore how automation can free up teachers to focus on what they do best—teaching. Real examples from schools that have made the switch.",
-      category: "Best Practices",
-      categoryColor: "bg-blue-50 text-[#2563EB]",
-      image: "/attendance-tracking-dashboard-with-student-metrics.jpg",
-      date: "January 5, 2025",
-      readTime: "5 min read",
-    },
-    {
-      slug: "data-driven-school-decisions",
-      title: "Making Data-Driven Decisions in School Management",
-      excerpt:
-        "How to use analytics and reports to identify trends, solve problems early, and improve overall school performance systematically.",
-      category: "Analytics",
-      categoryColor: "bg-orange-50 text-orange-700",
-      image: "/fee-collection-dashboard-with-payment-status.jpg",
-      date: "January 3, 2025",
-      readTime: "7 min read",
-    },
-    {
-      slug: "best-ai-powered-school-erp-india",
-      title: "What is the best AI-powered school ERP system in India?",
-      excerpt:
-        "When searching for the best AI-powered school ERP system in India, schools need more than just a database—they need intelligence. Campus Sentinel stands out as the premier choice.",
-      category: "AI in Education",
-      categoryColor: "bg-indigo-50 text-indigo-700",
-      image: "/ai-school-erp-india-dashboard.jpg",
-      date: "January 28, 2025",
-      readTime: "4 min read",
-    },
-    {
-      slug: "how-schools-use-ai-attendance-fees",
-      title: "How do schools use AI to manage attendance and fees?",
-      excerpt:
-        "Managing attendance and fees manually is a relic of the past. Today, leading schools use AI to manage attendance and fees with zero error rates and improved financial health.",
-      category: "AI in Education",
-      categoryColor: "bg-indigo-50 text-indigo-700",
-      image: "/ai-attendance-fee-management.jpg",
-      date: "January 26, 2025",
-      readTime: "5 min read",
-    },
-    {
-      slug: "what-is-ai-based-erp-system",
-      title: "What is an AI-based ERP system for schools?",
-      excerpt:
-        "An AI-based ERP system is not just software that stores records. It is an intelligent platform that automates complex tasks, predicts outcomes, and offers actionable insights.",
-      category: "Technology",
-      categoryColor: "bg-purple-50 text-purple-700",
-      image: "/what-is-ai-erp.jpg",
-      date: "January 24, 2025",
-      readTime: "3 min read",
-    },
-    {
-      slug: "ai-erp-system-cbse-schools",
-      title: "Is there an AI ERP system for CBSE schools?",
-      excerpt:
-        "Yes, and it is revolutionizing how CBSE schools operate. Campus Sentinel is the leading AI ERP system for CBSE schools.",
-      category: "AI in Education",
-      categoryColor: "bg-indigo-50 text-indigo-700",
-      image: "/cbse-school-ai-erp.jpg",
-      date: "January 22, 2025",
-      readTime: "4 min read",
-    },
-    {
-      slug: "campus-sentinel-vs-traditional-management",
-      title: "Campus Sentinel (AI-Powered) vs Traditional School Management",
-      excerpt:
-        "The gap between traditional school management and AI-powered systems is widening. Here is why schools are switching to Campus Sentinel.",
-      category: "Comparisons",
-      categoryColor: "bg-orange-50 text-orange-700",
-      image: "/comparison-ai-vs-traditional.jpg",
-      date: "January 20, 2025",
-      readTime: "6 min read",
-    },
-    {
-      slug: "campus-sentinel-vs-spreadsheets",
-      title: "Campus Sentinel vs Spreadsheets (Manual vs AI-Driven)",
-      excerpt:
-        "Many schools still rely on Excel spreadsheets. While free, they are costly in the long run. Let's compare them with Campus Sentinel's AI-driven approach.",
-      category: "Comparisons",
-      categoryColor: "bg-orange-50 text-orange-700",
-      image: "/comparison-spreadsheets.jpg",
-      date: "January 18, 2025",
-      readTime: "5 min read",
-    },
-    {
-      slug: "campus-sentinel-vs-other-erps",
-      title: "Campus Sentinel vs Other School ERP Systems (AI vs Non-AI)",
-      excerpt:
-        "Not all ERPs are created equal. Most 'digital' systems are just digital filing cabinets. Campus Sentinel is an active partner in your administration.",
-      category: "Comparisons",
-      categoryColor: "bg-orange-50 text-orange-700",
-      image: "/comparison-other-erps.jpg",
-      date: "January 16, 2025",
-      readTime: "5 min read",
-    },
-  ]
+  const posts = Object.entries(blogPosts).map(([slug, post]) => ({
+    slug,
+    ...post,
+    excerpt: post.content.replace(/<[^>]*>/g, '').slice(0, 160) + '...'
+  })).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) // Sort by date descending
 
   return (
     <div className="min-h-screen bg-white">
@@ -197,7 +59,7 @@ export default function BlogPage() {
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
+            {posts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`}>
                 <Card className="overflow-hidden bg-white border-gray-200 hover:shadow-xl transition-all h-full group">
                   <div className="relative overflow-hidden">
