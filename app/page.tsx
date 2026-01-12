@@ -35,81 +35,44 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Campus Sentinel",
-              "url": "https://campus-sentinel.com",
-              "logo": "https://campus-sentinel.com/images/campus-sentinel-logo.png",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+91-761-910-7621",
-                "contactType": "sales",
-                "email": "maximusconsultancyservice@gmail.com",
-                "areaServed": "IN",
-                "availableLanguage": "en"
-              },
-              "sameAs": [
-                "https://twitter.com/campussentinel",
-                "https://www.linkedin.com/company/campus-sentinel"
-              ]
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              "name": "Campus Sentinel",
-              "applicationCategory": "AI-Powered School ERP Software",
-              "operatingSystem": "Web, Android, iOS",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "INR",
-                "description": "Custom pricing based on school size"
-              },
-              "description": "Campus Sentinel is an AI-powered school ERP system that automates attendance, fee management, and parent communication.",
-              "featureList": "AI Attendance, Smart Fee Reminders, Automated Report Cards, Parent Communication App",
-              "screenshot": "https://campus-sentinel.com/modern-school-dashboard-interface-with-charts-and-.jpg"
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "How does AI improve school management?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "AI automates repetitive tasks like attendance marking and report generation, predicts fee collection trends, and enables personalized learning insights, saving administrators hours of work daily."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Is Campus Sentinel suitable for CBSE schools?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, Campus Sentinel is designed to be fully compliant with CBSE report card formats and attendance regulations, making it the perfect AI-powered ERP for CBSE institutions."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Can the software predict student dropout risks?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, our AI algorithms analyze attendance patterns and academic performance to identify students at risk of dropping out or falling behind, allowing for early intervention."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How secure is the student data?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We use bank-grade encryption and secure cloud infrastructure to ensure that all student and school data is completely safe and accessible only to authorized personnel."
-                  }
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does AI improve school management?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI automates repetitive tasks like attendance marking and report generation, predicts fee collection trends, and enables personalized learning insights, saving administrators hours of work daily."
                 }
-              ]
-            }
-          ])
+              },
+              {
+                "@type": "Question",
+                "name": "Is Campus Sentinel suitable for CBSE schools?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Campus Sentinel is designed to be fully compliant with CBSE report card formats and attendance regulations, making it the perfect AI-powered ERP for CBSE institutions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can the software predict student dropout risks?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, our AI algorithms analyze attendance patterns and academic performance to identify students at risk of dropping out or falling behind, allowing for early intervention."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How secure is the student data?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We use bank-grade encryption and secure cloud infrastructure to ensure that all student and school data is completely safe and accessible only to authorized personnel."
+                }
+              }
+            ]
+          })
         }}
       />
       <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
