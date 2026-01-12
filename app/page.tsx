@@ -23,6 +23,8 @@ import {
 import Script from "next/script"
 import Link from "next/link"
 import { useState } from "react"
+import { ContactModal } from "@/components/contact-modal"
+import { SiteFooter } from "@/components/site-footer"
 
 export default function HomePage() {
   const [showContactModal, setShowContactModal] = useState(false)
@@ -30,63 +32,87 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {showContactModal && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative animate-in fade-in zoom-in duration-200">
-            <button
-              onClick={() => setShowContactModal(false)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
-            >
-              <X className="h-6 w-6" />
-            </button>
-
-            <div className="text-center mb-6">
-              <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-4">
-                <Phone className="h-8 w-8 text-[#2563EB]" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Contact Sales</h3>
-              <p className="text-gray-600">Get in touch with our team to schedule a demo</p>
-            </div>
-
-            <div className="space-y-4">
-              <a
-                href="tel:+917619107621"
-                className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 hover:border-[#2563EB] hover:bg-blue-50 transition-all group"
-              >
-                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center group-hover:bg-[#2563EB] transition-colors">
-                  <Phone className="h-6 w-6 text-[#2563EB] group-hover:text-white" />
-                </div>
-                <div className="flex-1">
-                  <div className="text-sm text-gray-600">Phone Number</div>
-                  <div className="font-semibold text-gray-900">+91 761 910 7621</div>
-                </div>
-              </a>
-
-              <div className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 bg-gray-50">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center bg-background">
-                  <Mail className="h-6 w-6 text-primary" />
-                </div>
-                <div className="flex-1">
-                  <div className="text-sm text-gray-600">Email</div>
-                  <div className="font-semibold text-gray-900">maximusconsultancyservice@gmail.com</div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 bg-gray-50">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-primary" />
-                </div>
-                <div className="flex-1">
-                  <div className="text-sm text-gray-600">Location</div>
-                  <div className="font-semibold text-gray-900">Available across India</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-6 text-center text-sm text-gray-600">Our team typically responds within 24 hours</div>
-          </div>
-        </div>
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Campus Sentinel",
+              "url": "https://campus-sentinel.com",
+              "logo": "https://campus-sentinel.com/images/campus-sentinel-logo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-761-910-7621",
+                "contactType": "sales",
+                "email": "maximusconsultancyservice@gmail.com",
+                "areaServed": "IN",
+                "availableLanguage": "en"
+              },
+              "sameAs": [
+                "https://twitter.com/campussentinel",
+                "https://www.linkedin.com/company/campus-sentinel"
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "Campus Sentinel",
+              "applicationCategory": "AI-Powered School ERP Software",
+              "operatingSystem": "Web, Android, iOS",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "INR",
+                "description": "Custom pricing based on school size"
+              },
+              "description": "Campus Sentinel is an AI-powered school ERP system that automates attendance, fee management, and parent communication.",
+              "featureList": "AI Attendance, Smart Fee Reminders, Automated Report Cards, Parent Communication App",
+              "screenshot": "https://campus-sentinel.com/modern-school-dashboard-interface-with-charts-and-.jpg"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How does AI improve school management?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI automates repetitive tasks like attendance marking and report generation, predicts fee collection trends, and enables personalized learning insights, saving administrators hours of work daily."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is Campus Sentinel suitable for CBSE schools?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Campus Sentinel is designed to be fully compliant with CBSE report card formats and attendance regulations, making it the perfect AI-powered ERP for CBSE institutions."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can the software predict student dropout risks?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, our AI algorithms analyze attendance patterns and academic performance to identify students at risk of dropping out or falling behind, allowing for early intervention."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How secure is the student data?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We use bank-grade encryption and secure cloud infrastructure to ensure that all student and school data is completely safe and accessible only to authorized personnel."
+                  }
+                }
+              ]
+            }
+          ])
+        }}
+      />
+      <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
 
       {/* Header */}
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
@@ -635,122 +661,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-50 border-t border-gray-200">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <img src="/images/campus-sentinel-logo.png" alt="Campus Sentinel Logo" className="w-auto h-11" />
-                <span className="text-lg font-semibold text-gray-900">Campus Sentinel</span>
-              </div>
-              <p className="text-sm text-gray-600 leading-relaxed">Modern school management for modern schools.</p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-4">Product</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>
-                  <Link href="#" className="hover:text-gray-900">
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900">
-                    solutions
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900">
-                    Demo
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>
-                  <Link href="/what-is-campus-sentinel" className="hover:text-gray-900">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900">
-                    Support
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-4">Legal</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>
-                  <Link href="#" className="hover:text-gray-900">
-                    Privacy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-gray-900">
-                    Terms
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-            <p className="mt-2">Maximus consultancy services</p>
-          </div>
-        </div>
-      </footer>
-      {/* FAQ Schema */}
-      <Script
-        id="faq-json-ld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is Campus Sentinel?",
-                "acceptedAnswer": {
-                  "@type": "AcceptedAnswer",
-                  "text": "Campus Sentinel is an AI-powered school ERP system designed for Indian schools. It automates administrative tasks like attendance through surveillance, fee collection, exam management, and parent communication using artificial intelligence."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How does AI-powered attendance work?",
-                "acceptedAnswer": {
-                  "@type": "AcceptedAnswer",
-                  "text": "Campus Sentinel uses AI-enabled surveillance cameras to automatically capture and record student attendance in real-time, eliminating the need for manual roll calls."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Does Campus Sentinel evaluate answer sheets?",
-                "acceptedAnswer": {
-                  "@type": "AcceptedAnswer",
-                  "text": "Yes, its AI vision system can assist in evaluating handwritten or digital answer sheets, providing consistent and fast assessment results for teachers."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Is it suitable for Indian CBSE and ICSE schools?",
-                "acceptedAnswer": {
-                  "@type": "AcceptedAnswer",
-                  "text": "Yes, Campus Sentinel is built to comply with Indian educational standards, including support for CBSE and ICSE report formats and local fee structures."
-                }
-              }
-            ]
-          })
-        }}
-      />
+      <SiteFooter />
     </div>
   )
 }

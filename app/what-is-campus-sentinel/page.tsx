@@ -16,11 +16,15 @@ import {
     FileCheck,
 } from "lucide-react"
 import Link from "next/link"
-import React from "react"
+import React, { useState } from "react"
+import { SiteFooter } from "@/components/site-footer"
+import { ContactModal } from "@/components/contact-modal"
 
 export default function WhatIsCampusSentinel() {
+    const [showContactModal, setShowContactModal] = useState(false)
     return (
         <div className="min-h-screen bg-white">
+            <ContactModal isOpen={showContactModal} onClose={() => setShowContactModal(false)} />
             {/* Header - Keeping consistent with other pages */}
             <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +46,7 @@ export default function WhatIsCampusSentinel() {
                             <Link href="/about" className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
                                 About
                             </Link>
-                            <Button className="custom-contact-btn">
+                            <Button className="custom-contact-btn" onClick={() => setShowContactModal(true)}>
                                 Contact Sales
                             </Button>
                         </nav>
@@ -202,78 +206,7 @@ export default function WhatIsCampusSentinel() {
                 </div>
             </section>
 
-            {/* Footer */}
-            <footer className="bg-gray-50 border-t border-gray-200">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                    <div className="grid md:grid-cols-4 gap-8 mb-8">
-                        <div>
-                            <div className="flex items-center gap-2 mb-4">
-                                <img src="/images/campus-sentinel-logo.png" alt="Campus Sentinel Logo" className="w-auto h-11" />
-                                <span className="text-lg font-semibold text-gray-900">Campus Sentinel</span>
-                            </div>
-                            <p className="text-sm text-gray-600 leading-relaxed">Modern school management for modern schools.</p>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold text-gray-900 mb-4">Product</h4>
-                            <ul className="space-y-2 text-sm text-gray-600">
-                                <li>
-                                    <Link href="/#features" className="hover:text-gray-900">
-                                        Features
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#benefits" className="hover:text-gray-900">
-                                        Benefits
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/" className="hover:text-gray-900">
-                                        Demo
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
-                            <ul className="space-y-2 text-sm text-gray-600">
-                                <li>
-                                    <Link href="/what-is-campus-sentinel" className="hover:text-gray-900">
-                                        About
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="hover:text-gray-900">
-                                        Contact
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="hover:text-gray-900">
-                                        Support
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold text-gray-900 mb-4">Legal</h4>
-                            <ul className="space-y-2 text-sm text-gray-600">
-                                <li>
-                                    <Link href="#" className="hover:text-gray-900">
-                                        Privacy
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="hover:text-gray-900">
-                                        Terms
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-                        <p>© {new Date().getFullYear()} Maximus Consultancy Services Group. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
+            <SiteFooter />
         </div>
     )
 }
