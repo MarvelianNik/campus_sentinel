@@ -54,9 +54,9 @@ export function SiteFooter() {
                                     </button>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:text-gray-900">
+                                    <button onClick={() => setShowContactModal(true)} className="hover:text-gray-900 text-left">
                                         Support
-                                    </Link>
+                                    </button>
                                 </li>
                             </ul>
                         </div>

@@ -60,25 +60,33 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         </div>
                     </a>
 
-                    <div className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 bg-gray-50">
-                        <div className="w-12 h-12 rounded-full flex items-center justify-center bg-background">
-                            <Mail className="h-6 w-6 text-primary" />
+                    <a
+                        href="mailto:maximusconsultancyservice@gmail.com"
+                        className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 bg-gray-50 hover:border-[#2563EB] hover:bg-blue-50 transition-all group"
+                    >
+                        <div className="w-12 h-12 rounded-full flex items-center justify-center bg-background group-hover:bg-[#2563EB] transition-colors">
+                            <Mail className="h-6 w-6 text-primary group-hover:text-white" />
                         </div>
                         <div className="flex-1">
                             <div className="text-sm text-gray-600">Email</div>
                             <div className="font-semibold text-gray-900">maximusconsultancyservice@gmail.com</div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 bg-gray-50">
-                        <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center">
-                            <MapPin className="h-6 w-6 text-primary" />
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=India"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 bg-gray-50 hover:border-[#2563EB] hover:bg-blue-50 transition-all group"
+                    >
+                        <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center group-hover:bg-[#2563EB] transition-colors">
+                            <MapPin className="h-6 w-6 text-primary group-hover:text-white" />
                         </div>
                         <div className="flex-1">
                             <div className="text-sm text-gray-600">Location</div>
                             <div className="font-semibold text-gray-900">Available across India</div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div className="mt-6 text-center text-sm text-gray-600">Our team typically responds within 24 hours</div>
