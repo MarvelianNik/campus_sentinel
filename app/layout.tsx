@@ -15,7 +15,7 @@ const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200
 export const metadata: Metadata = {
   metadataBase: new URL("https://campussentinel.com"), // TODO: Update with actual domain
   title: {
-    default: "Campus Sentinel – AI School ERP for Attendance, Fees, Students & Parent Communication",
+    default: "Campus Sentinel – AI School ERP for Attendance & Fees",
     template: "%s | Campus Sentinel",
   },
   alternates: {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://campussentinel.com",
-    title: "Campus Sentinel – AI School ERP for Attendance, Fees, Students & Parent Communication",
+    title: "Campus Sentinel – AI School ERP for Attendance & Fees",
     description:
       "Campus Sentinel is an AI-powered School ERP for attendance tracking, fee management, student reports, and parent communication.",
     siteName: "Campus Sentinel",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Campus Sentinel – AI School ERP for Attendance, Fees, Students & Parent Communication",
+    title: "Campus Sentinel – AI School ERP for Attendance & Fees",
     description:
       "Campus Sentinel is an AI-powered School ERP for attendance tracking, fee management, student reports, and parent communication.",
     images: ["/og-image.png"],

@@ -269,10 +269,10 @@ export default function HomePage() {
             <div className="lg:mt-8">
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 text-balance">
-                Campus Sentinel – AI-Powered School ERP
+                AI School ERP for Student Management, Reports & Parent Communication
               </h1>
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 text-pretty">
-                Campus Sentinel is the first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.
+                Our AI-driven platform helps schools track attendance, manage fees, generate student reports, and automate parent communication.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
