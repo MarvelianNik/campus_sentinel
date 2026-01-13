@@ -60,7 +60,7 @@ export default function WhatIsCampusSentinel() {
             </header>
 
             {/* Hero Section */}
-            <section className="py-16 lg:py-24 bg-gradient-to-b from-blue-50 to-white">
+            <section className="py-16 lg:py-24 bg-linear-to-b from-blue-50 to-white">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-4xl mx-auto text-center">
                         <Badge className="mb-6 bg-blue-100 text-[#2563EB] hover:bg-blue-100 border-0 text-sm py-1 px-4">
@@ -149,22 +149,22 @@ export default function WhatIsCampusSentinel() {
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-                        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-2xl">
+                        <div className="bg-linear-to-br from-blue-50 to-indigo-50 p-6 rounded-2xl">
                             <Brain className="h-8 w-8 text-blue-600 mb-4" />
                             <h3 className="font-bold text-gray-900 mb-2">AI Attendance Analysis</h3>
                             <p className="text-sm text-gray-600">Automated tracking and tracking insights.</p>
                         </div>
-                        <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-2xl">
+                        <div className="bg-linear-to-br from-green-50 to-emerald-50 p-6 rounded-2xl">
                             <Wallet className="h-8 w-8 text-green-600 mb-4" />
                             <h3 className="font-bold text-gray-900 mb-2">Smart Fee Tracking</h3>
                             <p className="text-sm text-gray-600">Predictions and automated reminders.</p>
                         </div>
-                        <div className="bg-gradient-to-br from-orange-50 to-yellow-50 p-6 rounded-2xl">
+                        <div className="bg-linear-to-br from-orange-50 to-yellow-50 p-6 rounded-2xl">
                             <FileCheck className="h-8 w-8 text-orange-600 mb-4" />
                             <h3 className="font-bold text-gray-900 mb-2">Exam Insights</h3>
                             <p className="text-sm text-gray-600">Automated exam performance analytics.</p>
                         </div>
-                        <div className="bg-gradient-to-br from-pink-50 to-rose-50 p-6 rounded-2xl">
+                        <div className="bg-linear-to-br from-pink-50 to-rose-50 p-6 rounded-2xl">
                             <TrendingUp className="h-8 w-8 text-pink-600 mb-4" />
                             <h3 className="font-bold text-gray-900 mb-2">AI Reports</h3>
                             <p className="text-sm text-gray-600">Generated reports for management.</p>

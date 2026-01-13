@@ -15,7 +15,7 @@ const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200
 export const metadata: Metadata = {
   metadataBase: new URL("https://campussentinel.com"), // TODO: Update with actual domain
   title: {
-    default: "Campus Sentinel – AI School ERP for Attendance and Fee Management",
+    default: "Campus Sentinel – AI School ERP: Track Fees, Attendance & Students",
     template: "%s | Campus Sentinel",
   },
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     },
   },
   description:
-    "Campus Sentinel is an AI-powered School ERP for attendance, fees, and parent communication. Streamline student management today!",
+    "Campus Sentinel is an automated AI School ERP for fee collection, tracking attendance, and student reports. Streamline management and parent communication today!",
   keywords: [
     "AI School ERP",
     "AI Powered School Management",
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://campussentinel.com",
-    title: "Campus Sentinel – AI School ERP for Attendance and Fee Management",
+    title: "Campus Sentinel – AI School ERP: Track Fees, Attendance & Students",
     description:
-      "Campus Sentinel is an AI-powered School ERP for attendance, fees, and parent communication. Streamline student management today!",
+      "Campus Sentinel is an automated AI School ERP for fee collection, tracking attendance, and student reports. Streamline management and parent communication today!",
     siteName: "Campus Sentinel",
     images: [
       {
@@ -65,10 +65,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Campus Sentinel – AI School ERP for Attendance and Fee Management",
+    title: "Campus Sentinel – AI School ERP: Track Fees, Attendance & Students",
     description:
-      "Campus Sentinel is an AI-powered School ERP for attendance, fees, and parent communication. Streamline student management today!",
+      "Campus Sentinel is an automated AI School ERP for fee collection, tracking attendance, and student reports. Streamline management and parent communication today!",
     images: ["/og-image.png"],
+    site: "@campussentinel",
     creator: "@campussentinel",
   },
   robots: {
@@ -205,8 +206,8 @@ export default function RootLayout({
                     "url": "https://campussentinel.com",
                     "price": "0",
                     "priceCurrency": "INR",
-                    "availability": "https://schema.org/InStock",
-                    "itemCondition": "https://schema.org/NewCondition"
+                    "availability": "InStock",
+                    "itemCondition": "NewCondition"
                   }
                 },
                 {
@@ -224,14 +225,15 @@ export default function RootLayout({
                     "url": "https://campussentinel.com",
                     "price": "0",
                     "priceCurrency": "INR",
-                    "availability": "https://schema.org/InStock",
-                    "itemCondition": "https://schema.org/NewCondition",
+                    "availability": "InStock",
+                    "itemCondition": "NewCondition",
                     "priceValidUntil": "2026-12-31"
                   },
                   "aggregateRating": {
                     "@type": "AggregateRating",
                     "ratingValue": "4.9",
-                    "reviewCount": "512"
+                    "reviewCount": "512",
+                    "ratingCount": "512"
                   },
                   "review": [
                     {

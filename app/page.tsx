@@ -118,7 +118,7 @@ export default function HomePage() {
             <div className="lg:mt-8">
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 text-balance">
-                Campus Sentinel – AI Powered School ERP
+                Automate & Track School Management with AI: Fees, Attendance & Reports
               </h1>
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 text-pretty">
                 Our AI-driven platform helps schools track attendance, manage fees, generate student reports, and automate parent communication.
@@ -146,7 +146,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl p-8 shadow-2xl">
+              <div className="bg-linear-to-br from-blue-50 to-gray-50 rounded-2xl p-8 shadow-2xl">
                 <img
                   src="/modern-school-dashboard-interface-with-charts-and-.jpg"
                   alt="Principal Dashboard"
@@ -197,7 +197,7 @@ export default function HomePage() {
       </section>
 
       {/* Dashboard Preview Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-16 lg:py-24 bg-linear-to-b from-white to-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-balance">
@@ -267,7 +267,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center">
                   <Bell className="h-6 w-6 text-[#25634A]" />
                 </div>
@@ -280,7 +280,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center">
                   <FileText className="h-6 w-6 text-[#25634A]" />
                 </div>
@@ -293,7 +293,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center">
                   <Users className="h-6 w-6 text-[#25634A]" />
                 </div>
@@ -306,7 +306,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-green-50 flex items-center justify-center">
                   <TrendingUp className="h-6 w-6 text-[#16A34A]" />
                 </div>
@@ -319,7 +319,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center">
                   <Shield className="h-6 w-6 text-[#25634A]" />
                 </div>
@@ -332,7 +332,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex gap-4 p-4 rounded-xl hover:bg-white/50 transition-colors">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-12 h-12 rounded-lg bg-blue-50 flex items-center justify-center">
                   <BarChart3 className="h-6 w-6 text-[#25634A]" />
                 </div>
@@ -349,7 +349,7 @@ export default function HomePage() {
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="py-16 lg:py-24 bg-gradient-to-b from-white to-blue-50">
+      <section id="benefits" className="py-16 lg:py-24 bg-linear-to-b from-white to-blue-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-balance">
@@ -552,7 +552,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-[#25634A] to-[#1e4d3a] text-white">
+      <section className="py-16 lg:py-24 bg-linear-to-br from-[#25634A] to-[#1e4d3a] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-balance">Ready to transform your school?</h2>
