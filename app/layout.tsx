@@ -225,15 +225,29 @@ export default function RootLayout({
                     "price": "0",
                     "priceCurrency": "INR",
                     "availability": "https://schema.org/InStock",
-                    "itemCondition": "https://schema.org/NewCondition"
+                    "itemCondition": "https://schema.org/NewCondition",
+                    "priceValidUntil": "2026-12-31"
                   },
                   "aggregateRating": {
                     "@type": "AggregateRating",
                     "ratingValue": "4.9",
-                    "bestRating": "5",
-                    "worstRating": "1",
-                    "ratingCount": "512"
-                  }
+                    "reviewCount": "512"
+                  },
+                  "review": [
+                    {
+                      "@type": "Review",
+                      "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5",
+                        "bestRating": "5"
+                      },
+                      "author": {
+                        "@type": "Person",
+                        "name": "RK Sharma"
+                      },
+                      "reviewBody": "Campus Sentinel has transformed our school's daily operations. The AI attendance and automated parent communication are game-changers."
+                    }
+                  ]
                 },
                 {
                   "@type": "SoftwareApplication",
