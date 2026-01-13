@@ -153,10 +153,17 @@ export default function RootLayout({
                   "@id": "https://campussentinel.com/#organization",
                   "name": "Campus Sentinel",
                   "url": "https://campussentinel.com",
-                  "logo": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                    "width": "1024",
+                    "height": "825"
+                  },
                   "image": {
                     "@type": "ImageObject",
-                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png"
+                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                    "width": "1024",
+                    "height": "825"
                   },
                   "alternateName": "Maximus Consultancy Services",
                   "description": "Campus Sentinel is an AI-powered school ERP software designed to help Indian schools manage attendance, fees, exams, communication, and analytics intelligently.",
@@ -197,14 +204,28 @@ export default function RootLayout({
                   "endDate": "2026-01-20T11:00:00+05:30",
                   "eventStatus": "https://schema.org/EventScheduled",
                   "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-                  "location": {
-                    "@type": "VirtualLocation",
-                    "url": "https://campussentinel.com",
-                    "name": "Campus Sentinel Online"
-                  },
+                  "location": [
+                    {
+                      "@type": "VirtualLocation",
+                      "url": "https://campussentinel.com",
+                      "name": "Campus Sentinel Online"
+                    },
+                    {
+                      "@type": "Place",
+                      "name": "Campus Sentinel Office",
+                      "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Bidar",
+                        "addressRegion": "Karnataka",
+                        "addressCountry": "IN"
+                      }
+                    }
+                  ],
                   "image": {
                     "@type": "ImageObject",
-                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png"
+                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                    "width": "1024",
+                    "height": "825"
                   },
                   "description": "Live demonstration of Campus Sentinel AI-powered school ERP features.",
                   "organizer": {
@@ -227,7 +248,9 @@ export default function RootLayout({
                   "name": "Campus Sentinel AI School ERP",
                   "image": {
                     "@type": "ImageObject",
-                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png"
+                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                    "width": "1024",
+                    "height": "825"
                   },
                   "description": "The first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.",
                   "brand": {
@@ -326,11 +349,13 @@ export default function RootLayout({
                   "description": "Discover how Campus Sentinel is revolutionizing school management in India through AI-driven automation and analytics.",
                   "image": {
                     "@type": "ImageObject",
-                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png"
+                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                    "width": "1024",
+                    "height": "825"
                   },
                   "author": {
-                    "@type": "Organization",
-                    "name": "Campus Sentinel Editorial Team",
+                    "@type": "Person",
+                    "name": "CEO TalentSwype",
                     "url": "https://campussentinel.com"
                   },
                   "publisher": {
@@ -361,7 +386,9 @@ export default function RootLayout({
                   "description": "The official website of Campus Sentinel AI School ERP.",
                   "image": {
                     "@type": "ImageObject",
-                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png"
+                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                    "width": "1024",
+                    "height": "825"
                   },
                   "potentialAction": {
                     "@type": "ReadAction",
@@ -386,7 +413,9 @@ export default function RootLayout({
                   "name": "Campus Sentinel",
                   "image": {
                     "@type": "ImageObject",
-                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png"
+                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                    "width": "1024",
+                    "height": "825"
                   },
                   "telephone": "+91-761-910-7621",
                   "address": {
@@ -411,7 +440,15 @@ export default function RootLayout({
                       "opens": "09:00",
                       "closes": "18:00"
                     }
-                  ]
+                  ],
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+91-761-910-7621",
+                    "contactType": "customer service",
+                    "email": "maximusconsultancyservice@gmail.com",
+                    "areaServed": "IN",
+                    "availableLanguage": ["English", "Hindi"]
+                  }
                 }
               ]
             })
