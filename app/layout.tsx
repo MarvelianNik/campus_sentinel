@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Campus Sentinel",
   },
   description:
-    "Campus Sentinel is the first AI-driven School ERP system that automates attendance via surveillance, answer sheet evaluation, and parent communication for modern schools.",
+    "Campus Sentinel is the first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.",
   keywords: [
     "AI School ERP",
     "AI Powered School Management",

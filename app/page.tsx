@@ -272,7 +272,7 @@ export default function HomePage() {
                 Campus Sentinel – AI Powered School ERP System for Indian Schools
               </h1>
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 text-pretty">
-                Campus Sentinel is an AI-driven School ERP that automates attendance via surveillance, evaluates answer sheets, and streamlines parent communication.
+                Campus Sentinel is the first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button

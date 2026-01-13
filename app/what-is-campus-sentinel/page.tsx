@@ -70,8 +70,7 @@ export default function WhatIsCampusSentinel() {
                             What is Campus Sentinel?
                         </h1>
                         <p className="text-lg text-gray-600 leading-relaxed text-pretty mb-8">
-                            Campus Sentinel is the world’s first AI-powered school ERP system designed to help schools manage
-                            academics, administration, and communication using artificial intelligence.
+                            Campus Sentinel is the first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.
                         </p>
                     </div>
                 </div>
