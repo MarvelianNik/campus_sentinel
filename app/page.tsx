@@ -269,7 +269,7 @@ export default function HomePage() {
             <div className="lg:mt-8">
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 text-balance">
-                Campus Sentinel – AI-Powered School ERP for Attendance, Fees & Student Management
+                Campus Sentinel – AI-Powered School ERP
               </h1>
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 text-pretty">
                 Campus Sentinel is the first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.
