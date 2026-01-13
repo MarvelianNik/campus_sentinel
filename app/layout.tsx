@@ -117,9 +117,13 @@ export default function RootLayout({
                   "url": "https://campussentinel.com",
                   "name": "Campus Sentinel",
                   "description": "AI-Powered School ERP Software for Indian Schools",
+                  "publisher": { "@id": "https://campussentinel.com/#organization" },
                   "potentialAction": {
                     "@type": "SearchAction",
-                    "target": "https://campussentinel.com/search?q={search_term_string}",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://campussentinel.com/search?q={search_term_string}"
+                    },
                     "query-input": "required name=search_term_string"
                   }
                 },
@@ -143,10 +147,51 @@ export default function RootLayout({
                   "name": "Campus Sentinel",
                   "url": "https://campussentinel.com",
                   "logo": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                  "alternateName": "Maximus Consultancy Services",
                   "description": "Campus Sentinel is an AI-powered school ERP software designed to help Indian schools manage attendance, fees, exams, communication, and analytics intelligently.",
+                  "contactPoint": [
+                    {
+                      "@type": "ContactPoint",
+                      "contactType": "customer support",
+                      "email": "support@campussentinel.com",
+                      "availableLanguage": ["en", "hi"]
+                    },
+                    {
+                      "@type": "ContactPoint",
+                      "contactType": "sales",
+                      "email": "sales@campussentinel.com",
+                      "availableLanguage": ["en", "hi"]
+                    }
+                  ],
                   "sameAs": [
                     "https://www.linkedin.com/company/campus-sentinel"
                   ]
+                },
+                {
+                  "@type": "Product",
+                  "@id": "https://campussentinel.com/#product",
+                  "name": "Campus Sentinel AI School ERP",
+                  "image": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                  "description": "The first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Campus Sentinel"
+                  },
+                  "offers": {
+                    "@type": "Offer",
+                    "url": "https://campussentinel.com",
+                    "price": "0",
+                    "priceCurrency": "INR",
+                    "availability": "https://schema.org/InStock",
+                    "itemCondition": "https://schema.org/NewCondition"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "bestRating": "5",
+                    "worstRating": "1",
+                    "ratingCount": "512"
+                  }
                 },
                 {
                   "@type": "SoftwareApplication",
@@ -160,11 +205,46 @@ export default function RootLayout({
                     "@id": "https://campussentinel.com/#organization"
                   },
                   "offers": {
-                    "@type": "Offer",
-                    "price": "0",
-                    "priceCurrency": "INR",
-                    "availability": "https://schema.org/InStock"
+                    "@id": "https://campussentinel.com/#product"
                   }
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://campussentinel.com/#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What is an AI-powered school ERP system?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "An AI-powered school ERP system uses artificial intelligence to automate school operations, analyze data, generate insights, and support better academic and administrative decisions."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How does Campus Sentinel use AI in school management?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Campus Sentinel applies AI to attendance patterns, academic performance, fee trends, and operational data to provide intelligent insights, alerts, and recommendations for schools."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Is Campus Sentinel suitable for Indian schools?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, Campus Sentinel is built specifically for Indian schools, supporting local academic structures, administrative workflows, and compliance requirements."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What makes Campus Sentinel different from traditional school ERP software?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Unlike traditional ERP systems, Campus Sentinel integrates AI-driven analytics and automation, enabling predictive insights, smarter decision-making, and proactive school management."
+                      }
+                    }
+                  ]
                 }
               ]
             })
