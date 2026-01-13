@@ -15,7 +15,7 @@ const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200
 export const metadata: Metadata = {
   metadataBase: new URL("https://campussentinel.com"), // TODO: Update with actual domain
   title: {
-    default: "Automate School Management: Fees, Collection, Parent & Reports",
+    default: "Automate School: Fee Collection, Student & Parent Reports",
     template: "%s | Campus Sentinel",
   },
   alternates: {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://campussentinel.com",
-    title: "Automate School Management: Fees, Collection, Parent & Reports",
+    title: "Automate School: Fee Collection, Student & Parent Reports",
     description:
       "Campus Sentinel is an automated AI School ERP for fees, attendance, and student reports. Streamline management and parent communication today!",
     siteName: "Campus Sentinel",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Automate School Management: Fees, Collection, Parent & Reports",
+    title: "Automate School: Fee Collection, Student & Parent Reports",
     description:
       "Campus Sentinel is an automated AI School ERP for fees, attendance, and student reports. Streamline management and parent communication today!",
     images: ["/og-image.png"],
@@ -147,12 +147,7 @@ export default function RootLayout({
                   "@id": "https://campussentinel.com/#organization",
                   "name": "Campus Sentinel",
                   "url": "https://campussentinel.com",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png",
-                    "width": "512",
-                    "height": "512"
-                  },
+                  "logo": "https://campussentinel.com/images/campus-sentinel-logo.png",
                   "image": "https://campussentinel.com/images/campus-sentinel-logo.png",
                   "alternateName": "Maximus Consultancy Services",
                   "description": "Campus Sentinel is an AI-powered school ERP software designed to help Indian schools manage attendance, fees, exams, communication, and analytics intelligently.",
@@ -193,24 +188,20 @@ export default function RootLayout({
                   "endDate": "2026-01-20T11:00:00+05:30",
                   "eventStatus": "https://schema.org/EventScheduled",
                   "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-                  "location": [
-                    {
-                      "@type": "VirtualLocation",
-                      "url": "https://campussentinel.com"
-                    },
-                    {
-                      "@type": "Place",
-                      "name": "Campus Sentinel Online",
-                      "address": {
-                        "@type": "PostalAddress",
-                        "addressCountry": "IN"
-                      }
+                  "location": {
+                    "@type": "Place",
+                    "name": "Campus Sentinel Online",
+                    "url": "https://campussentinel.com",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressCountry": "IN"
                     }
-                  ],
+                  },
                   "image": ["https://campussentinel.com/images/campus-sentinel-logo.png"],
                   "description": "Live demonstration of Campus Sentinel AI-powered school ERP features.",
                   "organizer": {
                     "@type": "Organization",
+                    "@id": "https://campussentinel.com/#organization",
                     "name": "Campus Sentinel",
                     "url": "https://campussentinel.com"
                   },
@@ -219,8 +210,8 @@ export default function RootLayout({
                     "url": "https://campussentinel.com",
                     "price": "0",
                     "priceCurrency": "INR",
-                    "availability": "InStock",
-                    "itemCondition": "NewCondition"
+                    "availability": "https://schema.org/InStock",
+                    "itemCondition": "https://schema.org/NewCondition"
                   }
                 },
                 {
@@ -239,8 +230,8 @@ export default function RootLayout({
                     "url": "https://campussentinel.com",
                     "price": "0",
                     "priceCurrency": "INR",
-                    "availability": "InStock",
-                    "itemCondition": "NewCondition",
+                    "availability": "https://schema.org/InStock",
+                    "itemCondition": "https://schema.org/NewCondition",
                     "priceValidUntil": "2026-12-31"
                   },
                   "aggregateRating": {
@@ -325,8 +316,8 @@ export default function RootLayout({
                   "description": "Discover how Campus Sentinel is revolutionizing school management in India through AI-driven automation and analytics.",
                   "image": "https://campussentinel.com/images/campus-sentinel-logo.png",
                   "author": {
-                    "@type": "Organization",
-                    "name": "Campus Sentinel Team",
+                    "@type": "Person",
+                    "name": "Campus Sentinel Editorial Team",
                     "url": "https://campussentinel.com"
                   },
                   "publisher": {
