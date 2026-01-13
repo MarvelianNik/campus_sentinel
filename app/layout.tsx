@@ -15,7 +15,7 @@ const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200
 export const metadata: Metadata = {
   metadataBase: new URL("https://campussentinel.com"), // TODO: Update with actual domain
   title: {
-    default: "Campus Sentinel – AI School ERP for Attendance & Fees",
+    default: "Campus Sentinel – AI School ERP for Attendance and Fee Management",
     template: "%s | Campus Sentinel",
   },
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     },
   },
   description:
-    "Campus Sentinel is an AI-powered School ERP for attendance tracking, fee management, student reports, and parent communication.",
+    "Campus Sentinel is an AI-powered School ERP for attendance, fees, and parent communication. Streamline student management today!",
   keywords: [
     "AI School ERP",
     "AI Powered School Management",
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://campussentinel.com",
-    title: "Campus Sentinel – AI School ERP for Attendance & Fees",
+    title: "Campus Sentinel – AI School ERP for Attendance and Fee Management",
     description:
-      "Campus Sentinel is an AI-powered School ERP for attendance tracking, fee management, student reports, and parent communication.",
+      "Campus Sentinel is an AI-powered School ERP for attendance, fees, and parent communication. Streamline student management today!",
     siteName: "Campus Sentinel",
     images: [
       {
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Campus Sentinel – AI School ERP for Attendance & Fees",
+    title: "Campus Sentinel – AI School ERP for Attendance and Fee Management",
     description:
-      "Campus Sentinel is an AI-powered School ERP for attendance tracking, fee management, student reports, and parent communication.",
+      "Campus Sentinel is an AI-powered School ERP for attendance, fees, and parent communication. Streamline student management today!",
     images: ["/og-image.png"],
     creator: "@campussentinel",
   },
@@ -111,6 +111,32 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@graph": [
+                {
+                  "@type": "WebSite",
+                  "@id": "https://campussentinel.com/#website",
+                  "url": "https://campussentinel.com",
+                  "name": "Campus Sentinel",
+                  "description": "AI-Powered School ERP Software for Indian Schools",
+                  "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://campussentinel.com/search?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://campussentinel.com/#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@id": "https://campussentinel.com",
+                        "name": "Home"
+                      }
+                    }
+                  ]
+                },
                 {
                   "@type": "Organization",
                   "@id": "https://campussentinel.com/#organization",

@@ -269,7 +269,7 @@ export default function HomePage() {
             <div className="lg:mt-8">
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 text-balance">
-                AI School ERP for Student Management, Reports & Parent Communication
+                Campus Sentinel – AI Powered School ERP
               </h1>
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 text-pretty">
                 Our AI-driven platform helps schools track attendance, manage fees, generate student reports, and automate parent communication.
@@ -314,7 +314,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-balance">
-              Managing Students, Fees & Attendance shouldn't feel this complicated
+              Streamline Student, Fee & Attendance Management
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed text-pretty">
               Paper registers, delayed fee collections, frustrated parents waiting for updates— you deserve better than
