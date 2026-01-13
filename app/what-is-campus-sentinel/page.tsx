@@ -206,7 +206,6 @@ export default function WhatIsCampusSentinel() {
                 </div>
             </section>
 
-            {/* Footer */}
             <SiteFooter />
         </div>
     )

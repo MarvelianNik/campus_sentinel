@@ -76,8 +76,16 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/images/favicon.ico",
-    apple: "/apple-icon.png",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/images/favicon.ico" },
+      { url: "/icon.svg" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png" },
+      { url: "/apple-icon.png" },
+    ],
+    shortcut: ["/favicon.ico"],
   },
 }
 
@@ -90,26 +98,42 @@ export default function RootLayout({
     <html lang="en" data-scroll-behavior="smooth">
       <body className={`font-sans antialiased`}>
         {children}
-        <Script
-          id="org-json-ld"
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'Campus Sentinel',
-              url: 'https://campussentinel.com',
-              logo: 'https://campussentinel.com/images/campus-sentinel-logo.png',
-              sameAs: [
-                'https://twitter.com/campussentinel'
-              ],
-              contactPoint: {
-                '@type': 'ContactPoint',
-                telephone: '+91-761-910-7621',
-                contactType: 'sales',
-                areaServed: 'IN',
-                availableLanguage: 'en'
-              }
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://campussentinel.com/#organization",
+                  "name": "Campus Sentinel",
+                  "url": "https://campussentinel.com",
+                  "logo": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                  "description": "Campus Sentinel is an AI-powered school ERP software designed to help Indian schools manage attendance, fees, exams, communication, and analytics intelligently.",
+                  "sameAs": [
+                    "https://www.linkedin.com/company/campus-sentinel"
+                  ]
+                },
+                {
+                  "@type": "SoftwareApplication",
+                  "@id": "https://campussentinel.com/#software",
+                  "name": "Campus Sentinel",
+                  "operatingSystem": "Web-based",
+                  "applicationCategory": "AI-Powered School ERP Software",
+                  "applicationSubCategory": "Education Management System",
+                  "description": "Campus Sentinel is an AI-powered education management software that helps schools automate operations, gain insights, and improve academic and administrative decision-making.",
+                  "publisher": {
+                    "@id": "https://campussentinel.com/#organization"
+                  },
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "INR",
+                    "availability": "https://schema.org/InStock"
+                  }
+                }
+              ]
             })
           }}
         />
