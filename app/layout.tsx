@@ -153,12 +153,7 @@ export default function RootLayout({
                   "@id": "https://campussentinel.com/#organization",
                   "name": "Campus Sentinel",
                   "url": "https://campussentinel.com",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png",
-                    "width": "512",
-                    "height": "512"
-                  },
+                  "logo": "https://campussentinel.com/images/campus-sentinel-logo.png",
                   "image": {
                     "@type": "ImageObject",
                     "url": "https://campussentinel.com/images/campus-sentinel-logo.png"
@@ -214,7 +209,8 @@ export default function RootLayout({
                   "description": "Live demonstration of Campus Sentinel AI-powered school ERP features.",
                   "organizer": {
                     "@type": "Organization",
-                    "@id": "https://campussentinel.com/#organization"
+                    "name": "Campus Sentinel",
+                    "url": "https://campussentinel.com"
                   },
                   "offers": {
                     "@type": "Offer",
@@ -237,10 +233,7 @@ export default function RootLayout({
                   "brand": {
                     "@type": "Brand",
                     "name": "Campus Sentinel",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://campussentinel.com/images/campus-sentinel-logo.png"
-                    }
+                    "logo": "https://campussentinel.com/images/campus-sentinel-logo.png"
                   },
                   "offers": {
                     "@type": "Offer",
@@ -337,7 +330,6 @@ export default function RootLayout({
                   },
                   "author": {
                     "@type": "Organization",
-                    "@id": "https://campussentinel.com/#organization",
                     "name": "Campus Sentinel Editorial Team",
                     "url": "https://campussentinel.com"
                   },
