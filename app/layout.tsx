@@ -113,7 +113,7 @@ export default function RootLayout({
             })
           }}
         />
-        {process.env.NODE_ENV === "production" && <Analytics />}
+        {process.env.NODE_ENV === "production" && process.env.VERCEL_ENV === "production" && <Analytics />}
         <DebugSuppressor />
       </body>
     </html>
