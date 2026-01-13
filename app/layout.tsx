@@ -15,7 +15,7 @@ const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200
 export const metadata: Metadata = {
   metadataBase: new URL("https://campussentinel.com"), // TODO: Update with actual domain
   title: {
-    default: "Campus Sentinel – AI School ERP: Track Fees, Attendance & Students",
+    default: "Automate School Management: Fees, Collection, Parent & Reports",
     template: "%s | Campus Sentinel",
   },
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     },
   },
   description:
-    "Campus Sentinel is an automated AI School ERP for fee collection, tracking attendance, and student reports. Streamline management and parent communication today!",
+    "Campus Sentinel is an automated AI School ERP for fees, attendance, and student reports. Streamline management and parent communication today!",
   keywords: [
     "AI School ERP",
     "AI Powered School Management",
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://campussentinel.com",
-    title: "Campus Sentinel – AI School ERP: Track Fees, Attendance & Students",
+    title: "Automate School Management: Fees, Collection, Parent & Reports",
     description:
-      "Campus Sentinel is an automated AI School ERP for fee collection, tracking attendance, and student reports. Streamline management and parent communication today!",
+      "Campus Sentinel is an automated AI School ERP for fees, attendance, and student reports. Streamline management and parent communication today!",
     siteName: "Campus Sentinel",
     images: [
       {
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Campus Sentinel – AI School ERP: Track Fees, Attendance & Students",
+    title: "Automate School Management: Fees, Collection, Parent & Reports",
     description:
-      "Campus Sentinel is an automated AI School ERP for fee collection, tracking attendance, and student reports. Streamline management and parent communication today!",
+      "Campus Sentinel is an automated AI School ERP for fees, attendance, and student reports. Streamline management and parent communication today!",
     images: ["/og-image.png"],
     site: "@campussentinel",
     creator: "@campussentinel",
@@ -153,6 +153,7 @@ export default function RootLayout({
                     "width": "512",
                     "height": "512"
                   },
+                  "image": "https://campussentinel.com/images/campus-sentinel-logo.png",
                   "alternateName": "Maximus Consultancy Services",
                   "description": "Campus Sentinel is an AI-powered school ERP software designed to help Indian schools manage attendance, fees, exams, communication, and analytics intelligently.",
                   "address": {
@@ -192,14 +193,26 @@ export default function RootLayout({
                   "endDate": "2026-01-20T11:00:00+05:30",
                   "eventStatus": "https://schema.org/EventScheduled",
                   "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-                  "location": {
-                    "@type": "VirtualLocation",
-                    "url": "https://campussentinel.com"
-                  },
+                  "location": [
+                    {
+                      "@type": "VirtualLocation",
+                      "url": "https://campussentinel.com"
+                    },
+                    {
+                      "@type": "Place",
+                      "name": "Campus Sentinel Online",
+                      "address": {
+                        "@type": "PostalAddress",
+                        "addressCountry": "IN"
+                      }
+                    }
+                  ],
                   "image": ["https://campussentinel.com/images/campus-sentinel-logo.png"],
                   "description": "Live demonstration of Campus Sentinel AI-powered school ERP features.",
                   "organizer": {
-                    "@id": "https://campussentinel.com/#organization"
+                    "@type": "Organization",
+                    "name": "Campus Sentinel",
+                    "url": "https://campussentinel.com"
                   },
                   "offers": {
                     "@type": "Offer",
@@ -218,7 +231,8 @@ export default function RootLayout({
                   "description": "The first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.",
                   "brand": {
                     "@type": "Brand",
-                    "name": "Campus Sentinel"
+                    "name": "Campus Sentinel",
+                    "logo": "https://campussentinel.com/images/campus-sentinel-logo.png"
                   },
                   "offers": {
                     "@type": "Offer",
@@ -301,6 +315,90 @@ export default function RootLayout({
                         "@type": "Answer",
                         "text": "Unlike traditional ERP systems, Campus Sentinel integrates AI-driven analytics and automation, enabling predictive insights, smarter decision-making, and proactive school management."
                       }
+                    }
+                  ]
+                },
+                {
+                  "@type": "Article",
+                  "@id": "https://campussentinel.com/#article",
+                  "headline": "Transforming Indian Schools with AI-Powered ERP",
+                  "description": "Discover how Campus Sentinel is revolutionizing school management in India through AI-driven automation and analytics.",
+                  "image": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                  "author": {
+                    "@type": "Organization",
+                    "name": "Campus Sentinel Team",
+                    "url": "https://campussentinel.com"
+                  },
+                  "publisher": {
+                    "@id": "https://campussentinel.com/#organization"
+                  },
+                  "datePublished": "2026-01-01",
+                  "dateModified": "2026-01-13"
+                },
+                {
+                  "@type": "VideoObject",
+                  "@id": "https://campussentinel.com/#video",
+                  "name": "Campus Sentinel AI ERP Overview",
+                  "description": "A quick overview of how Campus Sentinel automates attendance, fees, and reports.",
+                  "thumbnailUrl": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                  "uploadDate": "2026-01-01",
+                  "duration": "PT2M",
+                  "contentUrl": "https://campussentinel.com/demo-video",
+                  "embedUrl": "https://campussentinel.com/embed/demo-video",
+                  "publisher": {
+                    "@id": "https://campussentinel.com/#organization"
+                  }
+                },
+                {
+                  "@type": "WebPage",
+                  "@id": "https://campussentinel.com/#webpage",
+                  "url": "https://campussentinel.com",
+                  "name": "Campus Sentinel - AI School ERP",
+                  "description": "The official website of Campus Sentinel AI School ERP.",
+                  "potentialAction": {
+                    "@type": "ReadAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://campussentinel.com",
+                      "actionPlatform": [
+                        "http://schema.org/DesktopWebPlatform",
+                        "http://schema.org/MobileWebPlatform"
+                      ]
+                    },
+                    "expectsAcceptanceOf": {
+                      "@type": "PropertyValueSpecification",
+                      "valueName": "Terms of Service",
+                      "valueRequired": true
+                    }
+                  }
+                },
+                {
+                  "@type": "LocalBusiness",
+                  "@id": "https://campussentinel.com/#localbusiness",
+                  "name": "Campus Sentinel",
+                  "image": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                  "telephone": "+91-761-910-7621",
+                  "address": {
+                    "@id": "https://campussentinel.com/#organization"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "12.9716",
+                    "longitude": "77.5946"
+                  },
+                  "openingHoursSpecification": [
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                      ],
+                      "opens": "09:00",
+                      "closes": "18:00"
                     }
                   ]
                 }
