@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     default: "Campus Sentinel | World's First AI-Powered School ERP",
     template: "%s | Campus Sentinel",
   },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-IN": "/",
+      "en": "/",
+    },
+  },
   description:
     "Campus Sentinel is the first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.",
   keywords: [
