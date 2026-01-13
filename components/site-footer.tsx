@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { ContactModal } from "@/components/contact-modal"
-import { Linkedin, Facebook } from "lucide-react"
+import { Linkedin, Facebook, Instagram } from "lucide-react"
 
 export function SiteFooter() {
     const [showContactModal, setShowContactModal] = useState(false)
@@ -49,6 +49,15 @@ export function SiteFooter() {
                                     aria-label="Follow us on Facebook"
                                 >
                                     <Facebook className="w-5 h-5" />
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/campussentinel/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-gray-400 hover:text-gray-900 transition-colors"
+                                    aria-label="Follow us on Instagram"
+                                >
+                                    <Instagram className="w-5 h-5" />
                                 </a>
                             </div>
                         </div>
