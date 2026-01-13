@@ -118,10 +118,10 @@ export default function HomePage() {
             <div className="lg:mt-8">
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 text-balance">
-                Automate School Management: Track Fees, Attendance & Reports
+                School Management Automation
               </h1>
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 text-pretty">
-                Our AI-driven platform helps schools track attendance, manage fees, generate student reports, and automate parent communication.
+                Our AI-driven school ERP platform helps you track attendance with real-time reports, automate fee collection with payment reminders, generate student performance reports, and streamline parent communication.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button

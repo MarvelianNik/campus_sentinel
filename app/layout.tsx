@@ -15,7 +15,7 @@ const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200
 export const metadata: Metadata = {
   metadataBase: new URL("https://campussentinel.com"), // TODO: Update with actual domain
   title: {
-    default: "Automate School Management: Track Fees, Attendance & Student Reports",
+    default: "School ERP: Automate Fees, Attendance & Reports",
     template: "%s | Campus Sentinel",
   },
   alternates: {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://campussentinel.com",
-    title: "Automate School Management: Track Fees, Attendance & Student Reports",
+    title: "School ERP: Automate Fees, Attendance & Reports",
     description:
       "Campus Sentinel is an automated AI School ERP to track fee collection, attendance & student reports. Streamline school management & parent communication!",
     siteName: "Campus Sentinel",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Automate School Management: Track Fees, Attendance & Student Reports",
+    title: "School ERP: Automate Fees, Attendance & Reports",
     description:
       "Campus Sentinel is an automated AI School ERP to track fee collection, attendance & student reports. Streamline school management & parent communication!",
     images: ["/og-image.png"],
@@ -367,15 +367,19 @@ export default function RootLayout({
                 {
                   "@type": "VideoObject",
                   "@id": "https://campussentinel.com/#video",
-                  "name": "Campus Sentinel AI ERP Overview",
-                  "description": "A quick overview of how Campus Sentinel automates attendance, fees, and reports.",
+                  "name": "Campus Sentinel AI ERP Demo - School Management Software",
+                  "description": "Watch how Campus Sentinel automates attendance tracking, fee collection, and student reports. See our AI-powered school ERP in action.",
                   "thumbnailUrl": "https://campussentinel.com/images/campus-sentinel-logo.png",
-                  "uploadDate": "2026-01-01",
-                  "duration": "PT2M",
+                  "uploadDate": "2026-01-01T00:00:00Z",
+                  "duration": "PT2M30S",
                   "contentUrl": "https://campussentinel.com/demo-video",
                   "embedUrl": "https://campussentinel.com/embed/demo-video",
                   "publisher": {
                     "@id": "https://campussentinel.com/#organization"
+                  },
+                  "potentialAction": {
+                    "@type": "WatchAction",
+                    "target": "https://campussentinel.com/demo-video"
                   }
                 },
                 {
