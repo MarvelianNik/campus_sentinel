@@ -146,26 +146,68 @@ export default function RootLayout({
                   "@id": "https://campussentinel.com/#organization",
                   "name": "Campus Sentinel",
                   "url": "https://campussentinel.com",
-                  "logo": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://campussentinel.com/images/campus-sentinel-logo.png",
+                    "width": "512",
+                    "height": "512"
+                  },
                   "alternateName": "Maximus Consultancy Services",
                   "description": "Campus Sentinel is an AI-powered school ERP software designed to help Indian schools manage attendance, fees, exams, communication, and analytics intelligently.",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Virtual Office",
+                    "addressLocality": "Bangalore",
+                    "addressRegion": "Karnataka",
+                    "postalCode": "560001",
+                    "addressCountry": "IN"
+                  },
                   "contactPoint": [
                     {
                       "@type": "ContactPoint",
-                      "contactType": "customer support",
-                      "email": "support@campussentinel.com",
-                      "availableLanguage": ["en", "hi"]
+                      "telephone": "+91-761-910-7621",
+                      "contactType": "sales",
+                      "email": "maximusconsultancyservice@gmail.com",
+                      "areaServed": "IN",
+                      "availableLanguage": ["English", "Hindi"]
                     },
                     {
                       "@type": "ContactPoint",
-                      "contactType": "sales",
-                      "email": "sales@campussentinel.com",
-                      "availableLanguage": ["en", "hi"]
+                      "telephone": "+91-761-910-7621",
+                      "contactType": "customer support",
+                      "email": "support@campussentinel.com",
+                      "areaServed": "IN",
+                      "availableLanguage": ["English", "Hindi"]
                     }
                   ],
                   "sameAs": [
                     "https://www.linkedin.com/company/campus-sentinel"
                   ]
+                },
+                {
+                  "@type": "Event",
+                  "name": "Campus Sentinel AI ERP Demo",
+                  "startDate": "2026-01-20T10:00:00+05:30",
+                  "endDate": "2026-01-20T11:00:00+05:30",
+                  "eventStatus": "https://schema.org/EventScheduled",
+                  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+                  "location": {
+                    "@type": "VirtualLocation",
+                    "url": "https://campussentinel.com"
+                  },
+                  "image": ["https://campussentinel.com/images/campus-sentinel-logo.png"],
+                  "description": "Live demonstration of Campus Sentinel AI-powered school ERP features.",
+                  "organizer": {
+                    "@id": "https://campussentinel.com/#organization"
+                  },
+                  "offers": {
+                    "@type": "Offer",
+                    "url": "https://campussentinel.com",
+                    "price": "0",
+                    "priceCurrency": "INR",
+                    "availability": "https://schema.org/InStock",
+                    "itemCondition": "https://schema.org/NewCondition"
+                  }
                 },
                 {
                   "@type": "Product",
