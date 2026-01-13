@@ -15,7 +15,7 @@ const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100", "200
 export const metadata: Metadata = {
   metadataBase: new URL("https://campussentinel.com"), // TODO: Update with actual domain
   title: {
-    default: "Campus Sentinel | World's First AI-Powered School ERP",
+    default: "Campus Sentinel – AI School ERP for Attendance, Fees, Students & Parent Communication",
     template: "%s | Campus Sentinel",
   },
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     },
   },
   description:
-    "Campus Sentinel is the first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.",
+    "Campus Sentinel is an AI-powered School ERP for attendance tracking, fee management, student reports, and parent communication.",
   keywords: [
     "AI School ERP",
     "AI Powered School Management",
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://campussentinel.com",
-    title: "Campus Sentinel - A smarter way to manage your school",
+    title: "Campus Sentinel – AI School ERP for Attendance, Fees, Students & Parent Communication",
     description:
-      "Complete school management platform for principals. Track attendance, manage fees, communicate with parents, and get smart insights.",
+      "Campus Sentinel is an AI-powered School ERP for attendance tracking, fee management, student reports, and parent communication.",
     siteName: "Campus Sentinel",
     images: [
       {
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Campus Sentinel - A smarter way to manage your school",
+    title: "Campus Sentinel – AI School ERP for Attendance, Fees, Students & Parent Communication",
     description:
-      "Complete school management platform for principals. Track attendance, manage fees, communicate with parents, and get smart insights.",
+      "Campus Sentinel is an AI-powered School ERP for attendance tracking, fee management, student reports, and parent communication.",
     images: ["/og-image.png"],
     creator: "@campussentinel",
   },

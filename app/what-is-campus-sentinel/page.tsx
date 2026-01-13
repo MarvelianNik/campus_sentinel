@@ -67,7 +67,7 @@ export default function WhatIsCampusSentinel() {
                             Overview
                         </Badge>
                         <h1 className="text-4xl lg:text-5xl lg:leading-tight font-bold text-gray-900 mb-6 text-balance">
-                            What is Campus Sentinel?
+                            What is Campus Sentinel AI School ERP?
                         </h1>
                         <p className="text-lg text-gray-600 leading-relaxed text-pretty mb-8">
                             Campus Sentinel is the first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.
@@ -80,7 +80,7 @@ export default function WhatIsCampusSentinel() {
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-3xl mx-auto text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6">Who should use it?</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6">Who should use our School Management System?</h2>
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
                         {["CBSE schools", "ICSE schools", "State board schools", "Private & semi-private schools"].map(
@@ -104,7 +104,7 @@ export default function WhatIsCampusSentinel() {
             <section className="py-16 lg:py-24 bg-gray-50">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-3xl mx-auto text-center mb-16">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6">Problems it Solves</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6">Problems it Solves: Attendance, Fees & Reporting</h2>
                         <p className="text-gray-600">Addressing the core challenges of school management.</p>
                     </div>
 
@@ -145,7 +145,7 @@ export default function WhatIsCampusSentinel() {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-3xl mx-auto text-center mb-16">
                         <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-0 mb-4">Capabilities</Badge>
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6">AI-Powered Features Summary</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6">AI-Powered Features: Tracking & Student Reports</h2>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -178,7 +178,7 @@ export default function WhatIsCampusSentinel() {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h2 className="text-3xl font-bold mb-8">Why schools choose Campus Sentinel</h2>
+                            <h2 className="text-3xl font-bold mb-8">Why schools choose our AI ERP</h2>
                             <div className="space-y-6">
                                 {[
                                     { title: "Saves administrative time", icon: Clock },

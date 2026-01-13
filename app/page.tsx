@@ -269,7 +269,7 @@ export default function HomePage() {
             <div className="lg:mt-8">
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 text-balance">
-                Campus Sentinel – AI Powered School ERP System for Indian Schools
+                Campus Sentinel – AI-Powered School ERP for Attendance, Fees & Student Management
               </h1>
               <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 text-pretty">
                 Campus Sentinel is the first AI-powered School ERP that automates attendance, answer evaluation, and parent communication.
@@ -314,7 +314,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-balance">
-              Running a school shouldn't feel this complicated
+              Managing Students, Fees & Attendance shouldn't feel this complicated
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed text-pretty">
               Paper registers, delayed fee collections, frustrated parents waiting for updates— you deserve better than
@@ -324,9 +324,9 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-6 glass-card hover:shadow-lg transition-all duration-300">
               <Clock className="h-10 w-10 text-[#2563EB] mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Time-consuming tasks</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Automated Attendance & Fees</h3>
               <p className="text-gray-600 leading-relaxed">
-                Hours wasted on manual attendance, fee tracking, and generating reports.
+                Save hours wasted on manual attendance tracking, fee collection, and generating student reports.
               </p>
             </Card>
             <Card className="p-6 glass-card hover:shadow-lg transition-all duration-300">
@@ -352,7 +352,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-balance">
-              Your school's health at a glance
+              Track School Performance & Fees at a glance
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed text-pretty">
               See what matters most with clean, simple dashboards designed for principals— not software engineers.
@@ -410,7 +410,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-balance">
-              Everything you need. Nothing you don't.
+              Key Features: Attendance, Fees & Student Management
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed text-pretty">
               Powerful features that actually make your life easier—not more complicated.
@@ -437,9 +437,9 @@ export default function HomePage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Smart Reports</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Student Performance Reports</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Generate detailed reports in seconds. Get insights that help you make better decisions.
+                  Generate detailed student performance reports in seconds. Get AI-driven insights for better decisions.
                 </p>
               </div>
             </div>
@@ -463,9 +463,9 @@ export default function HomePage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Fee Tracking</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Automated Fee Collection</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Automated fee collection with payment reminders and instant receipt generation.
+                  Smart fee tracking with automated payment reminders and instant receipt generation.
                 </p>
               </div>
             </div>
@@ -489,9 +489,9 @@ export default function HomePage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Performance Analytics</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Attendance Tracking & Analytics</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Track student performance, identify trends, and make data-driven decisions.
+                  Track student attendance via AI, identify trends, and make data-driven decisions.
                 </p>
               </div>
             </div>
@@ -504,7 +504,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-balance">
-              Transform how your school operates
+              Transform Student Management & Fee Collection
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed text-pretty">
               See the real impact Campus Sentinel brings to your school—from saving time to improving parent
